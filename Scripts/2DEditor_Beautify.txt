@@ -1,0 +1,3 @@
+var exchange = Refunds * 0.25;
+Refunds = Refunds - exchange;
+DigitalSales = DigitalSales + exchange;

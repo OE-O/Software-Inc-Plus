@@ -17,6 +17,7 @@ SoftwareType
 			}
 			{
 			Name			Adventure
+			Description     "Rememeber writing a novel to complete a game?"
 			Popularity		0.6
 			Retention		18
 			TimeScale		1
@@ -36,6 +37,7 @@ SoftwareType
 			}
 			{
 			Name			Sports
+			Description     "How about you go outside and play real sports"
 			Popularity		0.7
 			Retention		12
 			TimeScale		0.75
@@ -68,6 +70,7 @@ SoftwareType
 	Random			0.6
 	IdealPrice		80
 	OptimalDevTime	40
+	Dependencies "Game Editor"
 	OSSupport		True
 	SubmarketNames	[ Gameplay; Graphics; Story ]
 	Features
@@ -121,6 +124,7 @@ SoftwareType
 					}
 					{
 					Name		"Customizable character"
+					Description "This is cheaper than plastic surgery"
 					DevTime		3
 					Level		1
 					CodeArt		1
@@ -138,19 +142,37 @@ SoftwareType
 			Features
 				[
 					{
+					Name        "Text"
+					Description "You don't need fancy graphics"
+					Devtime     2
+					level       1
+					CodeArt     0.2
+					Submarkets  [1; 1; 3]
+					}
+					{
+					Name        "2D Characters"
+					Description "Make little perople run across the bottom of the screen!"
+					Devtime     3
+					level       1
+					CodeArt     0.6
+					Submarkets  [2; 2; 1]
+					}
+					{
 					Name		"Advanced HUD"
 					Description	"Add some more GUI to your game"
 					DevTime		4
-					Level		1
+					Level		2
 					CodeArt		0.8
-					Submarkets	[ 1; 0; 0 ]
+					Unlock      1982
+					Submarkets	[ 1; 2; 0 ]
 					}
 					{
 					Name		"Post-processing"
 					Description	"\#Bloom"
 					DevTime		3
-					Level		1
+					Level		2
 					CodeArt		0.75
+					Unlock      1985
 					Submarkets	[ 0; 1; 0 ]
 					}
 				]
@@ -202,14 +224,14 @@ SoftwareType
 					Submarkets	[ 0; 1; 0 ]
 					}
 					{
-					Name		"Wacky physics"
+					Name		"Broken Physics"
 					Description	"Boost your launch marketing with viral videos by introducing some bugs to your physics objects"
 					DevTime		4
 					Level		3
 					CodeArt		0
 					Submarkets	0
-					Script_OnRelease "Product.AddToMarketing(MarketSimulation.GetMaxAwareness(Product) * 0.75);"#Add 75% of current max marketing level to marketing amount
-					Script_WorkItemChange "if (!Ended && WorkItem is SoftwareAlpha) WorkItem.MaxBugs = WorkItem.MaxBugs * 1.5;"#Add 50% potential extra bugs to alpha phase
+					Script_OnRelease "/Scripts/Game_BrokenPhysicsA.txt"
+					Script_WorkItemChange "/Scripts/Game_BrokenPhysicsB.txt"
 					}
 				]
 			}
@@ -250,7 +272,7 @@ SoftwareType
 			{
 			Name			Multiplayer
 			Spec			Network
-			Description		"Facilitate the screaming of obscenities by teenagers from all over the world"
+			Description		"Facilitate the screaming of obscenities by teenagers from all over the world!"
 			Optional		True
 			Unlock			1990
 			DevTime			6
@@ -268,6 +290,24 @@ SoftwareType
 					Server		0.002
 					Submarkets	[ 1; 0; 0 ]
 					}
+					{
+					Name        "Chatting System"
+					Description "Chat to your friends!"
+					DevTime     7
+					Level       2
+					CodeArt     1
+					Server      0.0001
+					Submarkets  [1; 0; 0]
+					}
+					{
+					Name        "Parties"
+					Description "Create parties where you can play with your friends in a squad. \"Where we dropping bois?\""
+					DevTime     5
+					Level       2
+					CodeArt     1
+					Server 	    0.0001
+					Submarkets  [1; 0; 0;]
+					} 
 				]
 			}
 		]
