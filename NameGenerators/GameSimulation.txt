@@ -1,0 +1,39 @@
+-start(base,base,base,pre)
+-pre(base)
+The 
+-base(baseSimple2,baseLong2)
+Baby
+Horse
+Race
+Goat
+Train
+House
+Gun
+Pizza
+Space
+Fish
+Life
+Mafia
+Coaster
+F1
+Toy
+Air
+Foot
+Dream
+Army
+Kingdom
+-baseSimple2(stop,baseLong2,baseLong3)
+World
+Sim
+craft
+Gangs
+-baseLong2(baseLong3,stop)
+ Simulator
+ Manager
+ Tycoon
+-baseLong3(stop)
+ in Heaven
+ in Space
+ Ultra
+ 2015
+ Lite

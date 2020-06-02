@@ -1,0 +1,25 @@
+-start(base,pre)
+-pre(base)
+Anti-
+-base(base2,base3)
+Malware
+Virus
+Crime
+Evil
+Adware
+Spyware
+Worm
+Ad
+Sniffer
+Trojan
+-base2(stop)
+ Stopper
+ Fighter
+ Ender
+ Choker
+ Filter
+ Remover
+ Alarm
+-base3(base2,stop)
+Watch
+Trap

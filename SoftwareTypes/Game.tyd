@@ -1,0 +1,274 @@
+SoftwareType
+	{
+	Name			"Game"
+	Category		Gaming
+	Description		"Interactive art."
+	Categories
+		[
+			{
+			Name			RPG
+			Description		"Role Playing Game"
+			Popularity		0.6
+			Retention		24
+			TimeScale		1
+			Iterative		0.8
+			NameGenerator	GameRPG
+			Submarkets		[ 1; 2; 4 ]
+			}
+			{
+			Name			Adventure
+			Popularity		0.6
+			Retention		18
+			TimeScale		1
+			Iterative		0.8
+			NameGenerator	GameAdventure
+			Submarkets		[ 2; 4; 4 ]
+			}
+			{
+			Name			Simulation
+			Description		"You're playing one!"
+			Popularity		0.4
+			Retention		18
+			TimeScale		1
+			Iterative		0.7
+			NameGenerator	GameSimulation
+			Submarkets		[ 3; 1; 0 ]
+			}
+			{
+			Name			Sports
+			Popularity		0.7
+			Retention		12
+			TimeScale		0.75
+			Iterative		0.95
+			NameGenerator	GameSport
+			Submarkets		[ 1; 0; 0 ]
+			}
+			{
+			Name			RTS
+			Description		"Real Time Strategy"
+			Popularity		0.6
+			Retention		24
+			TimeScale		1
+			Iterative		0.95
+			NameGenerator	GameRTS
+			Submarkets		[ 4; 1; 2 ]
+			}
+			{
+			Name			FPS
+			Description		"First Person Shooter"
+			Popularity		0.75
+			Retention		12
+			TimeScale		1
+			Iterative		0.95
+			Unlock          1990
+			NameGenerator	GameFPS
+			Submarkets		[ 3; 4; 1 ]
+			}
+		]
+	Random			0.6
+	IdealPrice		80
+	OptimalDevTime	40
+	OSSupport		True
+	SubmarketNames	[ Gameplay; Graphics; Story ]
+	Features
+		[
+			{
+			Name		Game design
+			Spec		System
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Open world"
+					DevTime		8
+					Level		2
+					CodeArt		1
+					Submarkets	[ 3; 1; 2 ]
+					}
+					{
+					Name		"Physics"
+					Description	"Bouncy stuff"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Dialog trees"
+					Description	"Give the player a voice, and then make their character say something slightly different in-game"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Branching story"
+					Description	"Multiple different paths all leading to the same destination"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 5 ]
+					}
+					{
+					Name		"Mod support"
+					Description	"You can mod this feature out of the game if you want"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Customizable character"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name			2D Graphics
+			Spec			2D
+			DevTime			5
+			CodeArt			0.5
+			Dependencies	"2D Editor"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Advanced HUD"
+					Description	"Add some more GUI to your game"
+					DevTime		4
+					Level		1
+					CodeArt		0.8
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Post-processing"
+					Description	"\#Bloom"
+					DevTime		3
+					Level		1
+					CodeArt		0.75
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name			3D Graphics
+			Spec			3D
+			Optional		True
+			DevTime			6
+			CodeArt			0.5
+			Dependencies	"3D Editor"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Shadows"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Cutscenes"
+					DevTime		6
+					Level		2
+					CodeArt		0
+					Submarkets	[ 0; 1; 2 ]
+					}
+					{
+					Name		"VR"
+					Description	"Virtual Reality"
+					DevTime		6
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Facial animations"
+					DevTime		4
+					Level		1
+					CodeArt		0.8
+					Submarkets	[ 0; 4; 1 ]
+					}
+					{
+					Name		"Procedural generation"
+					DevTime		8
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Wacky physics"
+					Description	"Boost your launch marketing with viral videos by introducing some bugs to your physics objects"
+					DevTime		4
+					Level		3
+					CodeArt		0
+					Submarkets	0
+					Script_OnRelease "Product.AddToMarketing(MarketSimulation.GetMaxAwareness(Product) * 0.75);"#Add 75% of current max marketing level to marketing amount
+					Script_WorkItemChange "if (!Ended && WorkItem is SoftwareAlpha) WorkItem.MaxBugs = WorkItem.MaxBugs * 1.5;"#Add 50% potential extra bugs to alpha phase
+					}
+				]
+			}
+			{
+			Name			Audio
+			Spec			Audio
+			DevTime			3
+			CodeArt			0.5
+			Dependencies	"Audio Tool"
+			Submarkets		[ 1; 0; 2 ]
+			Features
+				[
+					{
+					Name		"Recorded dialog"
+					DevTime		6
+					Level		2
+					CodeArt		0
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Adaptive music"
+					DevTime		3
+					Level		1
+					CodeArt		0.25
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"Digital exclusive music"
+					Description	"Convert some of your physical sales to digital, loosing some of your physical sales in the process"
+					DevTime		2
+					Level		3
+					CodeArt		0
+					Submarkets	0
+					Script_AfterSales "DigitalSales = DigitalSales + PhysicalSales * 0.25;PhysicalSales = PhysicalSales * 0.7;"
+					}
+				]
+			}
+			{
+			Name			Multiplayer
+			Spec			Network
+			Description		"Facilitate the screaming of obscenities by teenagers from all over the world"
+			Optional		True
+			Unlock			1990
+			DevTime			6
+			CodeArt			1
+			Server			0.0003
+			Submarkets		[ 1; 0; 0 ]
+			Features
+				[
+					{
+					Name		"MMO"
+					Description "Massively Multiplayer Online"
+					DevTime		10
+					Level		2
+					CodeArt		1
+					Server		0.002
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+		]
+	}

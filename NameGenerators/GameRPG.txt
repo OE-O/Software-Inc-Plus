@@ -1,0 +1,40 @@
+-start(base,base,base,pre)
+-pre(base)
+The 
+-base(baseSimple2,baseLong2)
+Baby
+Horse
+Goat
+Star
+Grave
+Gun
+Zombie
+Thief
+Monster
+Space
+Mafia
+Curse
+Foot
+Dream
+Army
+Kingdom
+Tower
+-baseSimple2(stop,baseLong2,baseLong3)
+Slam
+wars
+World
+Beans
+Clans
+craft
+Gangs
+-baseLong2(baseLong3,stop)
+ Show
+ Rebirth
+ Killer
+ Town
+-baseLong3(stop)
+ in Heaven
+ in Space
+ at Night
+ of Death
+ Lite
