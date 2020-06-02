@@ -1,0 +1,188 @@
+SoftwareType
+	{
+	Name			"Antivirus"
+	Category		Security
+	Description		"Protecting computers from digital troublemakers since it became profitable to do so."
+	Random			0.3
+	Popularity		0.5
+	Retention		16
+	IdealPrice		70
+	OptimalDevTime	25
+	SubmarketNames	[ "Passive protection"; "Active protection"; "Monitoring" ]
+	Iterative		1
+	NameGenerator	Antivirus
+	OSSupport		[ Computer; Phone ]
+	InHouse			False
+	Features
+		[
+			{
+			Name		System scanning
+			Spec		System
+			Description "Protect against local threats"
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 0; 0 ]
+			Features
+				[
+					{
+					Name		"File scanner"
+					Description "Scan for viruses in the background causing hilarious file locks randomly"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Application scanner"
+					Description "Scan for malware in the background causing hilarious crashes randomly"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"Anti-theft"
+					Description "Why not let your computer know when it's been stolen"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"File encryption"
+					Description "Better keep that secret cookie recipe under lock!"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					
+				]
+			}
+			{
+			Name			Interface
+			Spec			2D
+			Optional		True
+			Description 	"Protect against usability threats"
+			DevTime			3
+			CodeArt			0.5
+			Dependencies	"2D Editor"
+			Submarkets		[ 0; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Malware alerts"
+					DevTime		1
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 0; 1; 2 ]
+					}
+					{
+					Name		"Hacking alerts"
+					DevTime		2
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 0; 1; 2 ]
+					}
+					{
+					Name		"File quarantine"
+					DevTime		1
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Password management"
+					Description "Avoid filling your inbox with password resets"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 2 ]
+					}
+				]
+			}
+			{
+			Name		Networking
+			Spec		Network
+			Optional	True
+			Description "Protect against external threats"
+			DevTime		1
+			CodeArt		1
+			Submarkets	[ 0; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Port blocking"
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Application access control"
+					Description "Solitaire Extreme does not need to access your system files"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"IP filtering"
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"Anti-spam"
+					Description "Receive less golden opportunities from your long lost relatives"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Ad blocker"
+					Description "Remove those things that make news sites unreadable"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Virus database"
+					Description "Automagically keep your users' virus definitions up to date"
+					Server		0.0001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Datamining"
+					Description	"Sell your users' data to make an extra {Currency:0.25} per active user, at the risk of getting caught"
+					Server		0.0005
+					DevTime		4
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+"if (Product.GetVar(\"Datamining\", true))//Check if player has been caught
+	{
+	var extra = Product.Userbase * 0.25;//Calculate extra income
+	Product.DevCompany.MakeTransaction(extra, Sales, \"Datamining\");//Add money
+	Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
+	if (Random() * Product.Userbase > 250000)//Random chance of getting caught
+		{
+		LaunchLawsuit(\"SpyingOnUsers\", Product.Sum, 1);//Create anonymous lawsuit
+		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);//Remove fans and market recognition from player in category
+		Product.Userbase = Product.Userbase * 0.05;//Remove 95% of active users
+		Product.KillAwareness();//Remove all marketing
+		Product.PutVar(\"Datamining\", false);//Mark player as caught for this product
+		}
+	}"
+					}
+				]
+			}
+		]
+	}

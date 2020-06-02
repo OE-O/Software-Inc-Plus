@@ -1,0 +1,39 @@
+-start(base,base,base,pre)
+-pre(base)
+The 
+-base(baseSimple2,baseLong2)
+Gun
+Zombie
+Thief
+Monster
+Space
+Army
+Hell
+Team
+Battle
+Target
+War
+-baseSimple2(stop,baseLong2,baseLong3)
+Attack
+World
+Shock
+field
+Strike
+fall
+Trigger
+Ghost
+Death
+-baseLong2(baseLong3,stop)
+ Fortress
+ Arms
+ Arena
+ Rebirth
+ Evolved
+ Killer
+-baseLong3(stop)
+ in Space
+ at Night
+ of Death
+ Lite
+ Deluxe
+ Advanced

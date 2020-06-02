@@ -1,0 +1,153 @@
+SoftwareType
+	{
+	Name			"2D Editor"
+	Category		Graphics
+	Description		"Program that allows you to handle 2 dimensional arrays of color information"
+	Random			0.1
+	Popularity		0.7
+	Retention		24
+	IdealPrice		80
+	OptimalDevTime	35
+	SubmarketNames	[ Drawing; Design; Retouching ]
+	Iterative		1
+	NameGenerator	2DEditor
+	OSSupport		Computer
+	InHouse			True
+	Features
+		[
+			{
+			Name		"2D graphics"
+			Spec		2D
+			Description "Seems pretty essential for this software type"
+			DevTime		6
+			CodeArt		0.8
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Vector graphics"
+					Description "Put some lines inside your pixels"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+					}
+					{
+					Name		"Procedural shapes"
+					Description "Who wants to draw a rectangle manually?"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 3; 0 ]
+					}
+					{
+					Name		"Layers"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Dynamic brushes"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 3; 0; 1 ]
+					}
+					{
+					Name		"Levels and curves"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Image effects"
+					Description "Needs more swirl"
+					DevTime		6
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Text rendering"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Brush presets"
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Brush stroke smoothing"
+					DevTime		2
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Clip art"
+					DevTime		4
+					Level		1
+					CodeArt		0
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Liquify"
+					Description "Stretch and pull your pixels"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Healing brush"
+					Description	"Remove zits, spots, specks, people, buildings, etc."
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Beautify"
+					Description	"Flatter people by making them look better in photos, so they are less likely to refund your product"
+					DevTime		6
+					Level		3
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					Script_AfterSales	"var exchange = Refunds * 0.25;Refunds = Refunds - exchange;DigitalSales = DigitalSales + exchange;"#Add 25% of refunds to digital sales
+					}
+				]
+			}
+			{
+			Name		System
+			Spec		System
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"RAW image import"
+					Description	"If you need to pull some extra color from your colors"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Drawing tablet support"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+		]
+	}

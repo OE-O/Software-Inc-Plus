@@ -1,0 +1,26 @@
+-start(base)
+-base(base2,base2,ext)
+GFX
+Render
+Cinema
+Power
+Vector
+Quad
+Tri
+-base2(stop,stop,ext)
+Edit
+Sculpt
+Scape
+Maker
+Stop
+ Styles
+ Frames
+ 3D
+ 4D
+Point
+Cut
+-ext(stop)
+ Pro
+ Suite
+ Studio
+ Premium

@@ -1,0 +1,25 @@
+-start(base)
+-base(base2,base2,ext)
+Picture
+Image
+Photo
+Print
+Frame
+Ink
+Final
+Power
+Vector
+-base2(stop,stop,ext)
+Edit
+Scape
+Maker
+Stop
+ Styles
+ Frames
+Point
+Cut
+-ext(stop)
+ Pro
+ Suite
+ Studio
+ Premium
