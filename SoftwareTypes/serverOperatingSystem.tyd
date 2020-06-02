@@ -1,16 +1,14 @@
 SoftwareType
 	{
 	Name			"Server Operating System"
-	Category		"Networking"
+	Category		Networking
     Unlock          1970
 	Description		"Simplify yours and others servers by creating a specifically designed operating system for it."
 	Random			0
 	IdealPrice		49
-	OptimalDevTime		25
-	OSSupport		[Computer;]
-	OneClient		False
-	InHouse			False
-	SubmarketNames		[ Storage; Backup; Speed;]
+	OptimalDevTime  69 
+	InHouse			True
+	SubmarketNames		[ Storage; Security; Speed;]
 	Categories
 		[
 			{
@@ -20,8 +18,8 @@ SoftwareType
 			Popularity		0.7
 			Submarkets		[ 4; 0; 1 ]
 			Retention		72
-			TimeScale		0.8
-			Iterative		0.85
+			TimeScale		0.5
+			Iterative		0.5
 			NameGenerator		serverOperatingSystem
 			}
 			{
@@ -29,31 +27,91 @@ SoftwareType
 			Description "This SOS (Server Operating System) is based on maximizing the speed of the server."
 			Unlock 1970
 			Popularity 0.8
-			Submarkets [1; 1; 3;]
+			Submarkets [1; 0; 3;]
 			Retention 72
-			TimeScale 0.8
+			TimeScale 0.65
+			Iterative 0.5
+			NameGenerator serverOperatingSystem
+			}
+			{
+			Name "Protection Based"
+			Description "This SOS (Server Operating System) is based on maximizing the security of the files at the loss of speed."
+			Unlock 1985
+			Popularity 0.75
+			Submarkets [1; 4; 0;]
+			Retention 68
+			TimeScale 0.9
+			Iterative 0.85
+			NameGenerator serverOperatingSystem
+			}
+			{
+			Name "Hosting Based"
+			Description "This SOS (Server Operating System) is based on maximizing the speed and storage for programs running on the server.
+			Unlock 1985
+			Popularity 0.85
+			Submarkets [1; 1; 2;]
+			Retention 79
+			TimeScale 0.85
+			Iterative 0.5
+			NameGenerator serverOperatingSystem
 			}
 		]
 	Features
 		[
 			{
-			Name 		"Images"
-			Spec		2D
-			Dependencies ["2D Editor"]
-			Description	"The core of a social media app!"
-			DevTime		3
+			Name 		"Core System"
+			Spec		System
+			Description	"The core of a server operating system!"
+			DevTime		5
 			CodeArt		0.75
 			Submarkets	[ 1; 1; 1 ]
 			Features
 				[
 					{
-					Name		"Filters"
+					Name		"Upload Files"
 					Description	"Let users add really cool filters to their uploads!"
 					DevTime		3
 					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
-					}					
+					CodeArt		0
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name "Firewall"
+					Description "Protect users from uploading dangerous files."
+					Level 1
+					Unlock 1985
+					CodeArt 0
+					Submarkets [0; 1; 0;]
+					}	
+					{
+					Name "GUI Interface"
+					Description "Allow users to access their server through a app or website."
+					Unlock 1985
+					Level 1
+					CodeArt 1
+					Submarkets [1; 1; 1;]
+					}				
+					{
+					Name "Command Interface"
+					Description "Allow users to access their server though a command line interface."
+					Level 1
+					CodeArt 0
+					Submarkets [1; 0; 1;]
+					}
+					{
+					Name "Sub-System Management"
+					Description "Manage connected servers into a collective power."
+					Level 2
+					CodeArt 0
+					Submarkets [1; 0; 2;]
+					}
+					{
+					Name "Automatic Backup"
+					Description "Automatically backup storage."
+					Level 2
+					CodeArt 0
+					Submarkets [1; 2; 0;]
+					}
 				]
 			}
 		]

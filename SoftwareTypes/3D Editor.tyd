@@ -2,7 +2,7 @@ SoftwareType
 {
 	Name			"3D Editor"
 	Category		Graphics
-	Description		"Points in space, basically"
+	Description		"Points in space, basically. Happy "
 	Random			0.1
 	Popularity		0.6
 	Retention		24
@@ -13,7 +13,38 @@ SoftwareType
 	Unlock			1985
 	NameGenerator	3DEditor
 	OSSupport		Computer
+	Override        True
 	InHouse			True
+	Categories
+		[
+			{
+			Name			Solid
+			Description		"Create objects that have volume"
+			Popularity		0.6
+			Retention		48
+			TimeScale		1
+			Iterative		0.6
+			Submarkets		[ 3; 4; 1 ]
+			}
+			{
+			Name			Wireframe
+			Description		"Simple lines, rendered with complicated maths"
+			Popularity		0.8
+			Retention		36
+			TimeScale		1
+			Iterative		0.8
+			Submarkets		[ 3; 2; 4 ]
+			}
+			{
+			Name			Surface
+			Description		"Create hollow or flat objects."
+			Popularity		0.2
+			Retention		18
+			TimeScale		1
+			Iterative		0.2
+			Submarkets		[ 1; 3; 2 ]
+			}
+		]
 	Features
 		[
 			{
