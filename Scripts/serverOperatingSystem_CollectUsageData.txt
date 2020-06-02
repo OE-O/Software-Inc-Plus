@@ -1,0 +1,1 @@
+Product.PutVar("CUD", true);
