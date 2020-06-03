@@ -261,7 +261,7 @@ SoftwareType
 					{
 					Name        "Famous Actors"
 					Description "Pay famous actors royalties to be the voices in your game"
-					Devtime     3
+					DevTime     3
 					Level       3
 					CodeArt     0
 					Submarkets  0

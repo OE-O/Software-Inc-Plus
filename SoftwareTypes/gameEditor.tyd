@@ -37,7 +37,7 @@ SoftwareType
                 {
                 Name		Core
                 Description "The core of a game editor."
-                Spec		[2D; 3D;]
+                Spec		System
                 DevTime		4
                 CodeArt		1
                 Submarkets	[ 1; 1; 1 ]
@@ -99,7 +99,7 @@ SoftwareType
                 {
                 Name "Optimization"
                 Description "Optimise games made with the editor."
-                Spec  System
+                Spec  2D
                 DevTime 6
                 CodeArt 0
                 Submarkets [1; 0; 2;]
