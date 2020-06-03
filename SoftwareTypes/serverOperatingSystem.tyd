@@ -16,7 +16,7 @@ SoftwareType
 			Description		"This Server OS is based on maximizing the storage of the server."
             Unlock          1970
 			Popularity		0.7
-			Submarkets		[ 4; 0; 1 ]
+			Submarkets		[ 4; 0; 1; ]
 			Retention		72
 			TimeScale		0.5
 			Iterative		0.5
@@ -46,7 +46,7 @@ SoftwareType
 			}
 			{
 			Name            "Hosting Based"
-			Description     "This Server OS is based on maximizing the speed and storage for programs running on the server.
+			Description     "This Server OS is based on maximizing the speed and storage for programs running on the server."
 			Unlock          1985
 			Popularity      0.85         
 			Submarkets      [1; 1; 2;]
@@ -211,7 +211,7 @@ SoftwareType
 					Description "Secretly use the users servers to bitcoin mine using the network requests. You get {Currency:0.85} per user, per day. High risk of being caught!"
 					Level       3
 					DevTime     4
-					Server		0.0009 // use 0.9mb per user
+					Server		0.0009
 					CodeArt     0
 					Submarkets  [1; 0; 0;]
 					Script_OnRelease "/Scripts/serverOperatingSystem_BitCoinMining.txt"
