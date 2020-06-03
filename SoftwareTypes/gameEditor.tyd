@@ -12,7 +12,7 @@ SoftwareType
                 Retention		24
                 TimeScale		1
                 Iterative		0.8
-                NameGenerator	GameRPG
+                NameGenerator	GameEditor
                 Submarkets		[ 2; 3; 2; ]
                 }
                 {
@@ -22,18 +22,106 @@ SoftwareType
                 Retention		24
                 TimeScale		1
                 Iterative		0.8
-                NameGenerator	GameRPG
+                NameGenerator	GameEditor
                 Submarkets		[ 2; 3; 1; ]
                 }
             ]	
         Random			0.6
         IdealPrice		80
         OptimalDevTime	40
-        Dependencies ["2D Editor"; "3D Editor";]
+        Dependencies    ["2D Editor"; "3D Editor";]
         OSSupport		True
         SubmarketNames	[ Useablility; Texturing; Compatability;]
         Features    
             [
-
+                {
+                Name		Core
+                Description "The core of a game editor."
+                Spec		[2D; 3D;]
+                DevTime		4
+                CodeArt		1
+                Submarkets	[ 1; 1; 1 ]
+                Features
+                    [
+                        {
+                        Name		"Automatic Game Object Generator"
+                        Description "Automatically create game objects and save time of the users."
+                        Unlock 1985
+                        DevTime		8
+                        Level		1
+                        CodeArt		1
+                        Submarkets	[ 3; 0; 0; ]
+                        }
+                        {
+                        Name        "Dynamic Texture Importation"
+                        Description "Automatically resize, color and edit textures onto models"
+                        Unlock      1985
+                        DevTime     5
+                        Level       1
+                        CodeArt     1
+                        Submarkets  [1; 2; 0;]
+                        }
+                        {
+                        Name "GUI Editor"
+                        Description "Drag and drop and make that baby work!"
+                        DevTime 3
+                        Level 1
+                        CodeArt 1
+                        Submarkets [1; 1; 1;]
+                        }
+                        {
+                        Name "Sound Importer"
+                        Description "Put really cool sounds into your game!"
+                        DevTime 3
+                        Level 1
+                        CodeArt 1
+                        Submarkets [2; 0; 1;]
+                        }
+                        {
+                        Name "Advertisement Support"
+                        Description "Add adverts!"
+                        DevTime 3
+                        Level 2
+                        CodeArt 1
+                        Submarkets [1; 0; 0;]
+                        }
+                        {
+                        Name "User Feedback Form Creator"
+                        Description "Add Feedback!"
+                        Server 0.0001
+                        DevTime 4
+                        Level 2
+                        CodeArt 1
+                        Submarkets [2; 1; 1;]
+                        }
+                    ]                           
+                }
+                {
+                Name "Optimization"
+                Description "Optimise games made with the editor."
+                Spec  System
+                DevTime 6
+                CodeArt 0
+                Submarkets [1; 0; 2;]
+                Features 
+                    [
+                        {
+                        Name "Code Cleanup Tool"
+                        Description "MattA would love this feature! Haha!"
+                        DevTime 8
+                        Level 1
+                        CodeArt 1
+                        Submarkets [2; 0; 0;]
+                        }
+                        {
+                        Name "Purge Tool"
+                        Description "Delete methods, sprites and other objects that aren't used."
+                        DevTime 2
+                        CodeArt 0
+                        Level 1
+                        Submarkets [2; 0; 1;] 
+                        }
+                    ]
+                }
             ]   
     }

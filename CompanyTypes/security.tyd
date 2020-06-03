@@ -1,0 +1,22 @@
+CompanyType
+	{
+	Specialization		"Security"
+	PerYear			0.2
+	Min			4
+	Max			9
+	Types
+		[
+			{
+			Software	"Server Operating System"
+			Chance		0.5
+			}
+			{
+			Software	"Operating System"
+			Chance		0.5
+			}
+            {
+            Software "Antivirus"
+            Chance 1
+            }
+		]
+	}

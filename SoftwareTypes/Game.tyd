@@ -70,7 +70,7 @@ SoftwareType
 	Random			0.6
 	IdealPrice		80
 	OptimalDevTime	40
-	Dependencies "Game Editor"
+	Dependencies    ["Game Editor"]
 	OSSupport		True
 	SubmarketNames	[ Gameplay; Graphics; Story ]
 	Features
@@ -259,13 +259,22 @@ SoftwareType
 					Submarkets	[ 1; 0; 1 ]
 					}
 					{
+					Name        "Famous Actors"
+					Description "Pay famous actors royalties to be the voices in your game"
+					Devtime     3
+					Level       3
+					CodeArt     0
+					Submarkets  0
+					Script_AfterSales "/Scripts/Game_FamousActors.txt"
+					}
+					{
 					Name		"Digital exclusive music"
 					Description	"Convert some of your physical sales to digital, loosing some of your physical sales in the process"
 					DevTime		2
 					Level		3
 					CodeArt		0
 					Submarkets	0
-					Script_AfterSales "DigitalSales = DigitalSales + PhysicalSales * 0.25;PhysicalSales = PhysicalSales * 0.7;"
+					Script_AfterSales "/Scripts/Game_DEM.txt"
 					}
 				]
 			}

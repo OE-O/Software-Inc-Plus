@@ -1,0 +1,2 @@
+DigitalSales = DigitalSales + PhysicalSales * 0.25;
+PhysicalSales = PhysicalSales * 0.7;

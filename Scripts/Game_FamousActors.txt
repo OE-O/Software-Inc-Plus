@@ -1,0 +1,2 @@
+var extra = Product.Userbase * 0.075;//Calculate Royalties.
+Product.DevCompany.MakeTransaction(-extra, Sales, "Royalties"); // Remove the money
