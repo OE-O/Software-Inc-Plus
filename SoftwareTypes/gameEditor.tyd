@@ -1,0 +1,39 @@
+SoftwareType 
+    {
+        Name			"Game Editor"
+        Category		Gaming 
+        Description		"Create interactive art."
+        Categories
+            [
+                {
+                Name			"2D"
+                Description		"Easily create 2D games"
+                Popularity		0.6
+                Retention		24
+                TimeScale		1
+                Iterative		0.8
+                NameGenerator	GameRPG
+                Submarkets		[ 2; 3; 2; ]
+                }
+                {
+                Name			"3D"
+                Description		"Easily create 3D games"
+                Popularity		0.6
+                Retention		24
+                TimeScale		1
+                Iterative		0.8
+                NameGenerator	GameRPG
+                Submarkets		[ 2; 3; 1; ]
+                }
+            ]	
+        Random			0.6
+        IdealPrice		80
+        OptimalDevTime	40
+        Dependencies ["2D Editor"; "3D Editor";]
+        OSSupport		True
+        SubmarketNames	[ Useablility; Texturing; Compatability;]
+        Features    
+            [
+
+            ]   
+    }
