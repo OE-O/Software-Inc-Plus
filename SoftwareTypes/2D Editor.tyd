@@ -8,7 +8,7 @@ SoftwareType
 	Retention		24
 	IdealPrice		46
 	OptimalDevTime	35
-	SubmarketNames	[ Drawing; Design; Retouching ]
+	SubmarketNames	[ "Drawing"; "Design"; "Retouching" ]
 	Iterative		1
 	NameGenerator	2DEditor
 	OSSupport		Computer
@@ -157,7 +157,7 @@ SoftwareType
 					}
 					{
 					Name		"Drawing tablet support"
-					Description "Allow users to plug in a drawing tablet!
+					Description "Allow users to plug in a drawing tablet!"
 					DevTime		3
 					Unlock      1985
 					Level		1
