@@ -16,9 +16,9 @@ SoftwareType
 	Features
 		[
 			{
-			Name		System scanning
+			Name		"System Scanning"
 			Spec		System
-			Description "Protect against local threats"
+			Description "Protect against local threats against your device."
 			DevTime		2
 			CodeArt		1
 			Submarkets	[ 1; 0; 0 ]
@@ -50,11 +50,27 @@ SoftwareType
 					}
 					{
 					Name		"File encryption"
-					Description "Better keep that secret cookie recipe under lock!"
+					Description "Better keep that secret cookie recipe under lock! Dont want the babushkas stealing it!"
 					DevTime		2
 					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name 		"Anti Ad-ware"
+					Description "Stop annoying popups or software getting into your pc without you knowing!"
+					DevTime     2
+					Level       2
+					CodeArt     1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name        "Anti Antiware"
+					Description "Stop being tricked into thinking your antivirus is saying something is fine, when really its not!"
+					DevTime     3
+					Level       2
+					CodeArt     1
+					Submarkets [ 1; 0; 0;]
 					}
 					
 				]
@@ -98,6 +114,14 @@ SoftwareType
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name        "File Exceptions"
+					Description "\"We have detected a threat in SoftwareInc.exe\" *internal screaming*"
+					DevTime     3
+					Level       2
+					CodeArt     1
+					Submarkets  [1; 0; 2;]
 					}
 				]
 			}
@@ -159,6 +183,14 @@ SoftwareType
 					Submarkets	[ 1; 1; 0 ]
 					}
 					{
+					Name        "Firewall"
+					Description "\"We will build a wall to make Windows XP great again!\""
+					DevTime     5
+					Level       2
+					CodeArt     1
+					Submarkets  [1; 1; 0;]
+					}
+					{
 					Name		"Datamining"
 					Description	"Sell your users' data to make an extra {Currency:0.25} per active user, at the risk of getting caught"
 					Server		0.0005
@@ -166,21 +198,7 @@ SoftwareType
 					Level		3
 					CodeArt		1
 					Submarkets	0
-					Script_EndOfDay
-"if (Product.GetVar(\"Datamining\", true))//Check if player has been caught
-	{
-	var extra = Product.Userbase * 0.25;//Calculate extra income
-	Product.DevCompany.MakeTransaction(extra, Sales, \"Datamining\");//Add money
-	Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
-	if (Random() * Product.Userbase > 250000)//Random chance of getting caught
-		{
-		LaunchLawsuit(\"SpyingOnUsers\", Product.Sum, 1);//Create anonymous lawsuit
-		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);//Remove fans and market recognition from player in category
-		Product.Userbase = Product.Userbase * 0.05;//Remove 95% of active users
-		Product.KillAwareness();//Remove all marketing
-		Product.PutVar(\"Datamining\", false);//Mark player as caught for this product
-		}
-	}"
+					Script_EndOfDay "/Scripts/Antivirus_Datamining.txt"
 					}
 				]
 			}

@@ -1,0 +1,2 @@
+var extra = Product.Userbase * 0.01;
+Product.DevCompany.MakeTransaction(extra, Sales, "Profit");

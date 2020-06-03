@@ -212,7 +212,7 @@ SoftwareType
 					{
 					Name		"Facial animations"
 					DevTime		4
-					Level		1
+					Level		2
 					CodeArt		0.8
 					Submarkets	[ 0; 4; 1 ]
 					}

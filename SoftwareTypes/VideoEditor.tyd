@@ -1,0 +1,67 @@
+SoftwareType
+	{
+	Name			"Video Editor"
+	Category		Video
+	Description		"This is part of a test mod. If you develop a perfect version, 50% of the population will want it for about $50, but less than 10% might randomly not want it."
+	Random			0.1
+	IdealPrice		50
+	OptimalDevTime		25
+	OSSupport		Computer
+	OneClient		False
+	InHouse			False
+	SubmarketNames		[ Effects; Quality; Usability; ]
+	Categories
+		[
+			{
+			Name			"Story Based"
+			Description		"Ah, the days of windows media player. Such good days..."
+			Popularity		0.5
+			Submarkets		[ 5; 0; 2; ]
+			Retention		24
+			TimeScale		1
+			Iterative		0.75
+			NameGenerator   videoEditor
+			}
+		]
+	Features
+		[
+			{
+			Name 		"Test feat 1"
+			Spec		System
+			Description	"This feature represents the system aspect of the product and cannot be deselected"
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]#50%, 0%, 50%
+			Features
+				[
+					{
+					Name		"Test subfeat 1"
+					Description	"This feature requires a level 1 System designer/programmer to be finished"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Test subfeat 2"
+					Description	"This feature will cost the owner $1000 per day when it is released"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	0 #No submarkets needed for level 3 features
+					Script_EndOfDay "Product.DevCompany.MakeTransaction(-1000, Bills, \"Owned\");"
+					}
+				]
+			}
+			{
+			Name 		"Test feat 2"
+			Spec		Audio
+			Dependencies	"Audio Tool"
+			Optional	True
+			Description	"This feature can be deselected, completely removing Audio features and Audio Tool dependencies from the product"
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 0; 1; 3 ]#0%, 25%, 75%
+			}
+		]
+	}
