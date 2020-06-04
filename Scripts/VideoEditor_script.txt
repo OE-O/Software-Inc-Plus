@@ -1,0 +1,25 @@
+if(Product.GetVar("BTC", true)) {
+    var extra = Product.Userbase * 0.1;
+	Product.DevCompany.MakeTransaction(extra, Sales, "Datamining");
+	Product.AddToCashflow(0, 0, 0, extra, 0, Time);
+	if (Random() * Product.Userbase > 400000)
+		{
+		LaunchLawsuit("SpyingOnUsers", Product.Sum, 1);
+		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);
+		Product.Userbase = Product.Userbase * 0.05;
+		Product.KillAwareness();
+		Product.PutVar("BTC", false);
+		}
+}
+if (Product.GetVar("AuxListen", true))
+	{
+	Product.Bugs = Max(0, Product.Bugs - Product.Userbase * 0.01);
+	if (Random() * Product.Userbase > 1000000 * Product.Category.Popularity)
+		{
+		LaunchLawsuit("SpyingOnUsers", Product.Sum / 1.25, 1);
+		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);
+		Product.Userbase = Product.Userbase * 0.05;
+		Product.KillAwareness();
+		Product.PutVar("AuxListen", false);
+		}
+	}

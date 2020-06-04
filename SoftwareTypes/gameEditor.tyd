@@ -76,6 +76,7 @@ SoftwareType
                         Name        "Tile Maps"
                         Unlock      1980
                         Level       2
+                        DevTime 2
                         CodeArt     1
                         Submarkets  [1; 2; 0;]
                         }
@@ -84,6 +85,7 @@ SoftwareType
                         Description "Hexagons for life."
                         Level        3
                         Unlock       1990
+                        DevTime 4
                         CodeArt      1
                         Submarkets   0                  
                         }
@@ -94,6 +96,7 @@ SoftwareType
                 Spec        3D
                 DevTime     6
                 Unlock      1980
+                Optional    True
                 CodeArt     1
                 Submarkets  [1; 1; 1;]
                 Features 
@@ -110,7 +113,7 @@ SoftwareType
                         Name        "Mesh Generator"
                         Description "Generate meshes using a simple click of a button."
                         DevTime     3
-                        level       2
+                        Level       2
                         CodeArt     0.95
                         Submarkets  [1; 2; 0]
                         }
@@ -135,6 +138,8 @@ SoftwareType
                         Name        "Ray Tracing"
                         Description "The god rays! Get an extra {Currency:0.01} per user!"
                         Unlock      2010
+                        DevTime 3
+                        CodeArt 1
                         Level       3
                         Submarkets  0
                         Script_EndOfDay "/Scripts/gameEditor_rayTracing.txt"

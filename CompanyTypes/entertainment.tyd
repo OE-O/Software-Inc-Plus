@@ -1,0 +1,26 @@
+CompanyType
+	{
+	Specialization		"Video and Entertainment"
+	PerYear			0.2
+	Min			4
+	Max			10
+	Types
+		[
+			{
+			Software	"Video Editor"
+			Chance		1
+			}
+			{
+			Software	"2D Editor"
+			Chance		1
+			}
+            {
+            Software "3D Editor"
+            Chance 1
+            }
+            {
+            Software "Audio Tool"
+            Chance 1
+            }
+		]
+	}

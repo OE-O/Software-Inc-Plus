@@ -1,0 +1,20 @@
+-start(base,pre)
+-pre(base)
+Super
+Ultra
+RAR
+ZIP
+TAR
+APK
+-base(base2, stop)
+Extractor
+Viewer
+
+-base2(stop)
+ Stopper
+ Fighter
+ Ender
+ Choker
+ Filter
+ Remover
+ Alarm
