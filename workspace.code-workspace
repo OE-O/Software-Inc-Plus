@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "./"
+		}
+	],
+	"settings": {
+		"files.associations": {"*.tyd": "clojure"},
+		"material-icon-theme.files.associations": {"*.tyd": "clojure"},
+		"editor.tabSize": 6
+	}
+}

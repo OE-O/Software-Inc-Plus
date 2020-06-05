@@ -1,11 +1,11 @@
 SoftwareType
 	{
 		Name			"Video Editor"
-		Category		"Video Editing and Cinematography."
+		Category			"Video Editing and Cinematography."
 		Description		"Easily make videos using a video editor!"
 		Random			0.1
 		IdealPrice		50
-		OptimalDevTime	46
+		OptimalDevTime		46
 		OSSupport		Computer
 		OneClient		False
 		InHouse			False
@@ -20,7 +20,7 @@ SoftwareType
 				Retention		24
 				TimeScale		1
 				Iterative		0.75
-				NameGenerator   videoEditor
+				NameGenerator   	videoEditor
 				}
 				{
 				Name			"Professional Based"
@@ -28,10 +28,10 @@ SoftwareType
 				Popularity		0.9
 				Submarkets		[ 5; 0; 2; ]
 				Retention		24
-				Unlock          2000
+				Unlock          		2000
 				TimeScale		1
 				Iterative		0.75
-				NameGenerator   videoEditor
+				NameGenerator   	videoEditor
 				}
 			]
 		Features
@@ -40,8 +40,8 @@ SoftwareType
 				Name 		"Video"
 				Spec		System
 				Description	"Edit videos!"
-				DevTime		3
-				CodeArt		1
+				DevTime	3
+				CodeArt	1
 				Submarkets	[ 0; 1; 0; ]
 				Features
 					[
