@@ -16,7 +16,15 @@ CompanyType
 			}
             {
             Software "Antivirus"
-            Chance 1
+            Chance 0.9
             }
+			{
+			Software "File Compression"
+			Chance   0.75
+			}
+			{
+			Software "VPN"
+			Chance 0.9
+			}
 		]
 	}

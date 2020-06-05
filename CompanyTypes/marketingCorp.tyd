@@ -1,21 +1,17 @@
 CompanyType
 	{
-	Specialization		"Server Management"
+	Specialization		"Marketing Corporation"
 	PerYear			0.2
 	Min			4
 	Max			9
 	Types
 		[
 			{
-			Software	"Server Operating System"
+			Software	"2D Editor"
 			Chance		1
 			}
 			{
-			Software	"Operating System"
-			Chance		1
-			}
-			{
-			Software	"Antivirus"
+			Software	"Video Editor"
 			Chance		1
 			}
 			{

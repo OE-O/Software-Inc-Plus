@@ -1,0 +1,5 @@
+if(Product.GetVar("subServ", true))
+    {
+        var extra = (Product.Userbase / 0.1) * 3.44;
+        Product.DevCompany.MakeTransaction(extra, Sales, "Subscriptions")
+    }

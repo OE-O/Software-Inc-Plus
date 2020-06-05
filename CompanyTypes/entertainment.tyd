@@ -22,5 +22,9 @@ CompanyType
             Software "Audio Tool"
             Chance 1
             }
+			{
+			Software "File Compression"
+			Chance 0.85
+			}
 		]
 	}
