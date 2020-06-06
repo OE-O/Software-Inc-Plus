@@ -14,12 +14,12 @@ CompanyType
 			Software	"Operating System"
 			Chance		0.5
 			}
-            {
-            Software "Antivirus"
-            Chance 0.9
-            }
 			{
-			Software "File Compression"
+			Software "Antivirus"
+			Chance 0.9
+			}
+			{
+			Software "File Compression Tool"
 			Chance   0.75
 			}
 			{

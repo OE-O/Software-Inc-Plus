@@ -15,7 +15,7 @@ CompanyType
 			Chance		1
 			}
 			{
-			Software "File Compression"
+			Software "File Compression Tool"
 			Chance   1
 			}
 		]
