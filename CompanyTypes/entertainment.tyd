@@ -14,17 +14,21 @@ CompanyType
 			Software	"2D Editor"
 			Chance		1
 			}
-            {
-            Software "3D Editor"
-            Chance 1
-            }
-            {
-            Software "Audio Tool"
-            Chance 1
-            }
+			{
+			Software "3D Editor"
+			Chance 1
+			}
+			{
+			Software "Audio Tool"
+			Chance 1
+			}
 			{
 			Software "File Compression"
 			Chance 0.85
+			}
+			{
+			Software "Streaming Service"
+			Chance 1
 			}
 		]
 	}

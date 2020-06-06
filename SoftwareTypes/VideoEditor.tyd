@@ -38,7 +38,7 @@ SoftwareType
 			[
 				{
 				Name 		"Video"
-				Spec		System
+				Spec		Video
 				Description	"Edit videos!"
 				DevTime	3
 				CodeArt	1
