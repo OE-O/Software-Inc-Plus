@@ -1,6 +1,6 @@
 SoftwareType
       {
-      Name "Streaming App"
+      Name "Film Streaming Service"
       Override False     
       Category "Entertainment"
       Categories 
