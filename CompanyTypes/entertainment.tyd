@@ -26,9 +26,5 @@ CompanyType
 			Software "File Compression Tool"
 			Chance 1
 			}
-			{
-			Software "Film Streaming Service"
-			Chance 1
-			}
 		]
 	}
