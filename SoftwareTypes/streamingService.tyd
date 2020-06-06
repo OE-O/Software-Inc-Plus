@@ -67,7 +67,7 @@ SoftwareType
                               Submarkets [ 3; 2; 0;]
                               }
                               {
-                              Name "Rentable Films"
+                              Name "Buyable Films"
                               Description "Allow users to buy Films."
                               DevTime 4
                               Level 1
