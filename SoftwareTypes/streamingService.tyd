@@ -46,7 +46,7 @@ SoftwareType
                               Name "Rentable Films"
                               Description "Allow users to rent Films."
                               DevTime 4
-                              Level 2
+                              Level 1
                               CodeArt 1
                               Submarkets [ 3; 2; 0;]
                               }
@@ -54,15 +54,15 @@ SoftwareType
                               Name "Rentable TV Shows"
                               Description "Allow users to rent TV Shows."
                               DevTime 4
-                              Level 2
+                              Level 1
                               CodeArt 1
                               Submarkets [ 3; 2; 0;]
                               }
                               {
-                              Name "Rentable TV Shows"
+                              Name "Buyable TV Shows"
                               Description "Allow users to buy TV Shows."
                               DevTime 4
-                              Level 2
+                              Level 1
                               CodeArt 1
                               Submarkets [ 3; 2; 0;]
                               }
@@ -70,7 +70,7 @@ SoftwareType
                               Name "Rentable Films"
                               Description "Allow users to buy Films."
                               DevTime 4
-                              Level 2
+                              Level 1
                               CodeArt 1
                               Submarkets [ 3; 2; 0;]
                               }
@@ -78,7 +78,7 @@ SoftwareType
 					Name "Original TV Shows"
                               Description "\"Come to us because we have a show you cant get anywhere else!\""
 					DevTime 8
-					Level	1
+					Level	2
 					CodeArt 1
 					Submarkets [ 3; 1; 2 ]
 					}
@@ -86,7 +86,7 @@ SoftwareType
                               Name "Original Films"
                               Description "\"Come to us because we have a film you cant get anywhere else!\""
 					DevTime 8
-					Level	1
+					Level	2
 					CodeArt 1
 					Submarkets [ 3; 1; 2 ]
                               }
@@ -94,7 +94,7 @@ SoftwareType
                               Name "Classics"
                               Description "Show classic TV shows and Films."
                               DevTime 7
-                              Level 1
+                              Level 2
                               CodeArt 1
                               Submarkets [3; 1; 2;]
                               }
