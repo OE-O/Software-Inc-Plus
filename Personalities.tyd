@@ -1,0 +1,214 @@
+PersonalityGraph
+	{
+	Personalities
+		[
+			{
+			Name		Egoistic
+			WorkLearn	0
+			Social		1
+			LazyStress	-0.2
+			Relationships
+				{
+				Extrovert		1
+				Narcassistic	0.2
+                Extrovert       -0.2
+				}
+			}
+			{
+			Name		Narcassistic
+			WorkLearn	-0.5
+			Social		1
+			LazyStress	-0.3
+            Relationships
+                {
+                Extrovert 0.2
+                Exoistic -1
+                Pessemistic -1
+                Competitive 0.1
+                Apathetic -0.3
+                }
+			}
+            {
+			Name		Pessemistic
+			WorkLearn	1
+			Social		-0.1
+			LazyStress	0.7
+			Relationships 
+				{
+				Narcassistic -0.2
+				Exoistic -1
+				Egoistic 0.3
+				Pessemistic 0.8
+				Apathetic -0.3
+				}
+			}
+            {
+			Name		Competitive
+			WorkLearn	1
+			Social		0
+			LazyStress	0.8
+			Relationships
+				{
+				Apathetic 0.1
+				Pessemistic -0.2
+				}
+			}
+            {
+			Name		Apathetic
+			WorkLearn	0.4
+			Social		0.7
+			LazyStress	-0.3
+			Relationships
+				{
+				Narcassistic -1
+				}
+			}
+			{
+			Name		Spontaneous
+			WorkLearn	-0.3
+			Social		0.7
+			LazyStress	0
+			Relationships
+				{
+				Humanistic -0.3
+				Combustive -1
+				Narcassistic 0.2
+				}
+			}
+			{
+			Name        Combustive
+			WorkLearn   0.5
+			Social      -0.1
+			LazyStress  0.2
+			Relationships
+				{
+				Humanistic 0.2
+				Spontaneous -1
+				Narcassistic -0.2
+				}
+			}
+			{
+			Name        Humanistic
+			WorkLearn   0.8
+			Social      -0.1
+			LazyStress  0.3 
+			Relationships
+				{
+				Combustive -0.2
+				}
+			}
+			{
+			Name 		Methodical #basically "i want to speak to your manager type of person."
+			WorkLearn   -0.3
+			Social      1
+			LazyStress  -0.6
+			Relationships
+				{
+					Narcassistic 1
+					Humanistic -0.2
+				}
+			}
+			{
+			Name        Extratrovertive
+			WorkLearn   0
+			Social      0
+			LazyStress  0  
+			}
+			{
+			Name   		Counsleoritic
+			WorkLearn   1
+			Social      1
+			LazyStress  0
+			Relationships
+				{
+					Extratrovertive 1
+					Humanistic 1
+					Introvert 1
+					Extrovert 1
+				}     
+			}
+			{
+			Name 		Entitorial
+			WorkLearn   0.2
+			Social      1
+			LazyStress  0.2
+			Relationships
+				{
+					Introvert -1
+					Extrovert 0.1
+					Counsleoritic -1
+				}
+			}
+			{
+			Name 		Plainoral
+			WorkLearn   0
+		 	Social		0.3
+			LazyStress -0.9
+			Relationships
+				{
+					Entitorial -0.1
+					Counsleoritic 1
+				}
+			}
+			{
+			Name		Uniorial
+			WorkLearn   -0.7
+			Social      -1
+			LazyStress  0.6
+			Relationships
+				{
+					Plainoral -0.3
+					Counsleoritic -0.6
+					Entitorial 0.8
+				}
+			}
+			{
+			Name 		Dextremental
+			WorkLearn	-1
+			Social       0.3
+			LazyStress   1
+			}
+			{
+			Name 		Extremental
+			WorkLearn   0.8
+			Social      -0.4
+			LazyStress  0.1
+			Relationships 
+				{
+					Dextremental 0.1
+					Plainoral 0.5
+					Counsleoritic 0.3
+					Egoistic -1
+					Apathetic 1
+					Combustive -0.4
+				}
+			}
+			{
+			Name		Mudane
+			WorkLearn   1
+			Social 		1
+			LazyStress  -1
+			}
+			{
+			Name 		Overdane
+			WorkLearn   -1
+			Social		-1
+			LazyStress   1
+			}
+		]
+	Incompatibilities
+		[
+			[ Egoistic; Exoistic; ]
+			[ Narcassistic; Pessemistic; ]
+			[ Apathetic; Narcassistic;]
+            [ Apathetic; Competitive;]
+			[ Spontaneous; Combustive;]
+			[ Methodical; Humanistic;]
+			[ Counsleoritic; Introvert]
+			[ Plainoral; Unorial;]
+			[ Dextremental; Extremental;]
+		]
+	}
+
+
+
