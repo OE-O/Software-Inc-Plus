@@ -80,6 +80,7 @@ SoftwareType
                         Description "Let strangers fix bugs for you at a risk of being hacked!"
                         Level       3
                         CodeArt     1
+                        DevTime     8
                         Submarkets  0
                         Script_OnRelease "Product.PutVar(\"OpenSource\", true);"
                         Script_EndOfDay  "/Scripts/emulationSoftware_script.txt"
