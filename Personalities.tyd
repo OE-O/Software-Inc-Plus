@@ -21,11 +21,11 @@ PersonalityGraph
 			LazyStress	-0.3
             Relationships
                 {
-                Extrovert 0.2
-                Exoistic -1
+                Extrovert   0.2
+                Exoistic    -1
                 Pessemistic -1
                 Competitive 0.1
-                Apathetic -0.3
+                Apathetic   -0.3
                 }
 			}
             {
@@ -36,10 +36,10 @@ PersonalityGraph
 			Relationships 
 				{
 				Narcassistic -0.2
-				Exoistic -1
-				Egoistic 0.3
-				Pessemistic 0.8
-				Apathetic -0.3
+				Exoistic     -1
+				Egoistic     0.3
+				Pessemistic  0.8
+				Apathetic    -0.3
 				}
 			}
             {
@@ -49,7 +49,7 @@ PersonalityGraph
 			LazyStress	0.8
 			Relationships
 				{
-				Apathetic 0.1
+				Apathetic   0.1
 				Pessemistic -0.2
 				}
 			}
@@ -70,8 +70,8 @@ PersonalityGraph
 			LazyStress	0
 			Relationships
 				{
-				Humanistic -0.3
-				Combustive -1
+				Humanistic  -0.3
+				Combustive  -1
 				Narcassistic 0.2
 				}
 			}
@@ -82,8 +82,8 @@ PersonalityGraph
 			LazyStress  0.2
 			Relationships
 				{
-				Humanistic 0.2
-				Spontaneous -1
+				Humanistic   0.2
+				Spontaneous  -1
 				Narcassistic -0.2
 				}
 			}
@@ -105,7 +105,7 @@ PersonalityGraph
 			Relationships
 				{
 					Narcassistic 1
-					Humanistic -0.2
+					Humanistic   -0.2
 				}
 			}
 			{
@@ -122,9 +122,9 @@ PersonalityGraph
 			Relationships
 				{
 					Extratrovertive 1
-					Humanistic 1
-					Introvert 1
-					Extrovert 1
+					Humanistic      1
+					Introvert       1
+					Extrovert       1
 				}     
 			}
 			{
@@ -134,8 +134,8 @@ PersonalityGraph
 			LazyStress  0.2
 			Relationships
 				{
-					Introvert -1
-					Extrovert 0.1
+					Introvert     -1
+					Extrovert     0.1
 					Counsleoritic -1
 				}
 			}
@@ -146,7 +146,7 @@ PersonalityGraph
 			LazyStress -0.9
 			Relationships
 				{
-					Entitorial -0.1
+					Entitorial    -0.1
 					Counsleoritic 1
 				}
 			}
@@ -157,9 +157,9 @@ PersonalityGraph
 			LazyStress  0.6
 			Relationships
 				{
-					Plainoral -0.3
+					Plainoral     -0.3
 					Counsleoritic -0.6
-					Entitorial 0.8
+					Entitorial    0.8
 				}
 			}
 			{
@@ -175,12 +175,12 @@ PersonalityGraph
 			LazyStress  0.1
 			Relationships 
 				{
-					Dextremental 0.1
-					Plainoral 0.5
+					Dextremental  0.1
+					Plainoral     0.5
 					Counsleoritic 0.3
-					Egoistic -1
-					Apathetic 1
-					Combustive -0.4
+					Egoistic      -1
+					Apathetic     1
+					Combustive    -0.4
 				}
 			}
 			{
@@ -193,8 +193,20 @@ PersonalityGraph
 			Name 		Overdane
 			WorkLearn   -1
 			Social		-1
-			LazyStress   1
+			LazyStress  1
 			}
+            {
+            Name        Psychopath
+            WorkLearn   0.1
+            Social      -1
+            LazyStress  -1
+            }
+            {
+            Name        Sociopath
+			WorkLearn   -1
+			Social      -1
+			LazyStress  -1
+            }
 		]
 	Incompatibilities
 		[

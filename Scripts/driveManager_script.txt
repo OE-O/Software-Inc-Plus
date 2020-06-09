@@ -1,0 +1,3 @@
+if(Product.GetVar("DD", true)) {
+    Product.Bugs = Max(0, Product.Bugs + Product.Userbase * 0.001);
+}
