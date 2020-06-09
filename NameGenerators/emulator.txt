@@ -1,0 +1,14 @@
+-start(base)
+Emu
+Easy
+Hard
+Quick
+Fast
+-base(stop)
+Maker
+Lator
+Simple
+Taker
+Backwards
+Forwards
+Tester
