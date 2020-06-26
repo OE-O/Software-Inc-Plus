@@ -1,4 +1,4 @@
-![Software Inc+](https://i.imgur.com/Tkib09K.png)
+[![Software Inc+](https://i.imgur.com/Tkib09K.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2121637271)
 ===================
 
 [![GitHub issues](https://img.shields.io/github/issues/OE-O/software-inc-plus?style=for-the-badge)](https://github.com/OE-O/software-inc-plus/issues) [![GitHub forks](https://img.shields.io/github/forks/OE-O/software-inc-plus?style=for-the-badge)](https://github.com/OE-O/software-inc-plus/network) [![GitHub stars](https://img.shields.io/github/stars/OE-O/software-inc-plus?style=for-the-badge)](https://github.com/OE-O/software-inc-plus/stargazers)
