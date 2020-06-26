@@ -1,6 +1,8 @@
 ![Software Inc+](https://i.imgur.com/Tkib09K.png)
 ===================
 
+[![GitHub issues](https://img.shields.io/github/issues/OE-O/software-inc-plus?style=for-the-badge)](https://github.com/OE-O/software-inc-plus/issues) [![GitHub forks](https://img.shields.io/github/forks/OE-O/software-inc-plus?style=for-the-badge)](https://github.com/OE-O/software-inc-plus/network) [![GitHub stars](https://img.shields.io/github/stars/OE-O/software-inc-plus?style=for-the-badge)](https://github.com/OE-O/software-inc-plus/stargazers)
+
 Software Inc+ is a large scale add-on mod for Software Inc.
 
 Join and chat on discord! https://discord.gg/byq9QE6
