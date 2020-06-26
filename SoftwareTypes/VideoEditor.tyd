@@ -38,8 +38,8 @@ SoftwareType
 			[
 				{
 				Name 		"Video"
-				Spec		Video
-				Description	"Edit videos!"
+				Spec		3D
+				Description	"Edit videos! (Spec for video is currently broken, we will be setting it to \"Video\" when the bug is fixed.)"
 				DevTime	3
 				CodeArt	1
 				Submarkets	[ 0; 1; 0; ]
