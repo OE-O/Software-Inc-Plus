@@ -20,4 +20,4 @@ assignees: ''
 <!-- Anything else you want to tell us about this idea? -->
 
 **How would you implement it**
-<!-- If you have experience with modding Software Inc. use this space for Tyd/SIPL/C# sippets with the feature. USE A CODE BLOCK -->
+<!-- If you have experience with modding Software Inc. use this space for Tyd/SIPL/C# snippets with the feature. USE A CODE BLOCK -->
