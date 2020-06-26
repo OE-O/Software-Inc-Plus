@@ -18,6 +18,7 @@ Contributors will be listed on the steam page, and at the bottom of this readme,
 
 Subscribe on the steam workshop here:
 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2121637271
 
 #### DRM-Free
 
