@@ -142,5 +142,15 @@ SoftwareType
                         Submarkets  [6; 2; 3;]
                         }
                     ]
+                }
+                {
+                Name 		"3D Rendering"
+                Spec		3D
+                Description	"Dots away!"
+                DevTime		3
+                CodeArt		1
+                Submarkets	[ 0; 1; 0; ]
+                Features []
+                }
             ]
     }
