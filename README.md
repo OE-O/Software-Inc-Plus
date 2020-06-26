@@ -3,6 +3,8 @@
 
 Software Inc+ is a large scale add-on mod for Software Inc.
 
+Join and chat on discord! https://discord.gg/byq9QE6
+
 Before making a fork and start to contribute, please read our license.
 
 If you can't be bothered to read the full formal license, let me break it down for you:
