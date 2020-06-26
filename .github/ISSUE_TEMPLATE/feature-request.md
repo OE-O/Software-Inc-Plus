@@ -17,3 +17,7 @@ assignees: ''
 <!-- Put your suggestion here in the highest level of detail as possible, add examples, crappy drawings to explain, roam wild! But at least make it readable and understandable! And most importantly, CHECK IF IT HAS BEEN SUGGESTED BEFORE OR IS ALREADY IN SOFTWARE INC+ -->
 
 **Additional Info**
+<!-- Anything else you want to tell us about this idea? -->
+
+**How would you implement it**
+<!-- If you have experience with modding Software Inc. use this space for Tyd/SIPL/C# sippets with the feature. USE A CODE BLOCK -->
