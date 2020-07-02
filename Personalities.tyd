@@ -1,7 +1,192 @@
 PersonalityGraph
 	{
+	Replace True
 	Personalities
 		[
+			{
+            Name          Generous
+            WorkLearn     -0.5
+            Social        0.5
+            LazyStress    1
+            Relationships
+                {
+                Optimistic 1.75
+                Flirt      1.5
+                Naive      1.25
+                Stubborn   0.25
+                Introvert  1.5
+                Extrovert  1.5
+                }
+            }
+            {
+            Name          Optimistic
+            WorkLearn     1
+            Social        1
+            LazyStress    0
+            Relationships
+                {
+                Pessimistic    0.1
+                Goofy          0.5
+                Flirt          1.5
+                Dramatic       0.5
+                Short-tempered 0.25
+                Stubborn       0.5
+                Extrovert      1.25
+                }
+            }
+            {
+            Name          Misanthropist
+            WorkLearn     0.5
+            Social        -1
+            LazyStress    0
+            Relationships
+                {
+                Cocky          0
+                Snob           0
+                Mean           0
+                Generous       0
+                Optimistic     0
+                Pessimistic    0
+                Goofy          0
+                Flirt          0
+                Naive          0
+                Dramatic       0
+                Short-tempered 0
+                Stubborn       0
+                Introvert      0
+                Extrovert      0
+                }
+            }
+            {
+            Name          Cocky
+            WorkLearn     0.5
+            Social        -0.5
+            LazyStress    -1
+            Relationships
+                {
+                Snob           0.25
+                Optimistic     1.25
+                Pessimistic    0.1
+                Goofy          0.5
+                Flirt          1.5
+                Short-tempered 0.1
+                Introvert      0.5
+                Extrovert      1.25
+                }
+            }
+            {
+            Name          Snob
+            WorkLearn     0.5
+            Social        -0.5
+            LazyStress    0.5
+            Relationships
+                {
+                Mean       1.5
+                Optimistic 0.5
+                Goofy      0.1
+                Naive      0.5
+                }
+            }
+            {
+            Name          Mean
+            WorkLearn     0
+            Social        -1
+            LazyStress    -0.5
+            Relationships
+                {
+                Generous       0.1
+                Optimistic     0.1
+                Goofy          0.1
+                Flirt          0.5
+                Naive          0.25
+                Dramatic       1.25
+                Short-tempered 0.1
+                Introvert      0.25
+                }
+            }
+            {
+            Name          Goofy
+            WorkLearn     0
+            Social        0.5
+            LazyStress    -0.5
+            Relationships
+                {
+                Naive          1.25
+                Short-tempered 0.1
+                Introvert      1.75
+                Extrovert      1.5
+                }
+            }
+            {
+            Name          Flirt
+            WorkLearn     0
+            Social        1
+            LazyStress    -1
+            Relationships
+                {
+                Naive     0.75
+                Dramatic  1.25
+                Extrovert 1.75
+                }
+            }
+            {
+            Name          Naive
+            WorkLearn     -1
+            Social        0
+            LazyStress    -0.5
+            Relationships
+                {
+                Dramatic  1.25
+                Stubborn  0.75
+                Introvert 0.75
+                Extrovert 1.25
+                }
+            }
+            {
+            Name          Dramatic
+            WorkLearn     0
+            Social        0.5
+            LazyStress    1
+            Relationships
+                {
+                Stubborn  0.5
+                Introvert 0.25
+                Extrovert 1.25
+                }
+            }
+            {
+            Name          Short-tempered
+            WorkLearn     -0.5
+            Social        -0.5
+            LazyStress    0.5
+            Relationships
+                {
+                Stubborn  0.1
+                Extrovert 0.5
+                }
+            }
+            {
+            Name       Stubborn
+            WorkLearn  -1
+            Social     -0.5
+            LazyStress 0.5
+            }
+            {
+            Name          Introvert
+            WorkLearn     1
+            Social        -1
+            LazyStress    0.5
+            Relationships
+                {
+                Extrovert 0.75
+                }
+            }
+            {
+            Name       Extrovert
+            WorkLearn  0
+            Social     1
+            LazyStress 0
+            }
 			{
 			Name		Egoistic
 			WorkLearn	0
@@ -219,6 +404,15 @@ PersonalityGraph
 			[ Counsleoritic; Introvert]
 			[ Plainoral; Unorial;]
 			[ Dextremental; Extremental;]
+			[ Psychopath; Sociopath]
+			[ Misanthropist; Optimistic ]
+			[ Misanthropist; Flirt ]
+			[ Misanthropist; Extrovert ]
+			[ Optimistic; Pessimistic ]
+			[ Mean; Generous ]
+			[ Mean; Flirt ]
+			[ Flirt; Introvert ]
+			[ Introvert; Extrovert ]
 		]
 	}
 

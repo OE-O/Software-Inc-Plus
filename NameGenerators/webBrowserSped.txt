@@ -1,0 +1,17 @@
+-start(p1)
+Ultimate
+Cool
+Amazing
+Fast
+Professional
+Interesting
+-p1(p2, end)
+Browser
+Web Browser
+Speed Browser
+World Wide Web Viewer
+Viewer
+-p2()
+Pro
+Maxima
+Ultima
