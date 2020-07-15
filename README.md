@@ -26,8 +26,6 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2121637271
 
 #### DRM-Free
 
-[~~Download from the OE-O Launcher~~](https://www.youtube.com/watch?v=dQw4w9WgXcQ) Coming soon. 
-
 If you are using the DRM free version of software inc from [swinc.net](https://swinc.net), use a steam workshop downloader of choice and place in the mods folder.
 
 We recommend [steamworkshopdownloader.io](https://fallback.steamworkshopdownloader.io/) to download this.
@@ -40,6 +38,6 @@ Please make sure to triple check for bugs when ready to make a pull request.
 
 ## License
 
-See LICENSE.md
+See [LICENSE](https://github.com/OE-O/software-inc-plus/blob/master/LICENSE)
 
  [![forthebadge](https://forthebadge.com/images/badges/mom-made-pizza-rolls.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
