@@ -8,6 +8,7 @@ TAR
 APK
 -base(base2, stop)
 Extractor
+Compressor
 Viewer
 
 -base2(stop)

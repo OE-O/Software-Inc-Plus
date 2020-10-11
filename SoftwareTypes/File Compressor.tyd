@@ -1,0 +1,204 @@
+SoftwareType
+    {
+    Name			"File Compression Tool"
+    Category        "File Management"
+    Description     "Compress that file until its under a kilobyte!"
+    Random          0.7
+    IdealPrice      16
+    Unlock          1990
+    OptimalDevTime  6
+    OSSupport       Computer
+    OneClient       False
+    InHouse         False
+    SubmarketNames  [ Speed; Compatiability; Usability;]
+    Categories 
+        [
+            {
+            Name			"Compression"
+            Description		"Squash everything into a smaller space"
+            Popularity		0.5
+            Submarkets		[ 3; 3; 3; ]
+            Retention		18
+            TimeScale		1
+            Iterative		0.75
+            NameGenerator   fileCompTool
+            }
+            {
+            Name			"Decompression"
+            Description		"Expand things back to their original size"
+            Popularity		0.5
+            Submarkets		[ 3; 3; 3; ]
+            Retention		18
+            TimeScale		1
+            Iterative		0.75
+            NameGenerator   fileCompTool
+            }
+        ]
+    Features
+        [
+            {
+            Name			"Core"
+            Spec			System
+            Description		"Well! Compress those files!"
+            DevTime		    3
+            CodeArt		    1
+            Submarkets	    [ 0; 1; 0; ]
+            Features
+                [
+                    {
+                    Name			"zip compatiblitly"
+                    Description 	"One folder to rule them all!"
+                    DevTime			3
+                    Level			1
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"RAR compatiblitly"
+                    Description 	"Who uses RAR? It literally sucks!"
+                    DevTime			3
+                    Level			1
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"7z compatiblitly"
+                    Description 	"Z Z Z Z Z Z Z"
+                    DevTime			3
+                    Level			1
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"Gzip compatiblitly"
+                    Description 	"Clearly a copy paste file type..."
+                    DevTime			3
+                    Level			1
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"zipX compatiblitly"
+                    Description 	"Totally not made by Elon Musk."
+                    DevTime			3
+                    Level			2
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"Tar compatiblitly"
+                    Description 	"Again! Who uses this?"
+                    DevTime			3
+                    Level			2
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"lzip compatiblitly"
+                    Description 	"Fortnite fans will cringe at this."
+                    DevTime			3
+                    Level			2
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"bz compatiblitly"
+                    Description 	"Is this even a thing?"
+                    DevTime			3
+                    Level			1
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"APK compatiblitly"
+                    Description 	"\"Follow these three easy steps on how to get unlimited money in ultimate simulator simulator pro max 2\""
+                    DevTime			3
+                    Level			2
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"dar compatiblitly"
+                    Description 	"Bit posh... \"Har, Har, Dar.\""
+                    DevTime			3
+                    Level			2
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"Xar compatiblitly"
+                    Description 	"X marks the spot"
+                    DevTime			3
+                    Level			2
+                    CodeArt			1
+                    Submarkets		[ 0; 1; 0 ]
+                    }
+                    {
+                    Name			"Web Based Compression"
+                    Server      	0.01
+                    Description 	"Send the files off to your servers to be compressed."
+                    DevTime			5
+                    Level			3
+                    CodeArt			1
+                    SoftwareCategories [Compression]
+                    Submarkets		[ 2; 1; 1; ]
+                    }
+                    {
+                    Name			"Web Based Decompression"
+                    Server      	0.01
+                    Description 	"Send the files off to your servers to be decompressed."
+                    DevTime			5
+                    Level			3
+                    CodeArt			1
+                    SoftwareCategories [Decompression]
+                    Submarkets		[ 2; 1; 1; ]
+                    }
+                ]           
+            }
+            {
+            Name			"User Interface"
+            Spec        	2D
+            Description 	"You want to see what is happening. Don't you?"
+            Optional    	True
+            Dependencies 	"2D Editor"
+            DevTime 		2
+            CodeArt 		0.4
+            Submarkets 		[0; 0; 1;]
+            Features 
+                [
+                    {
+                    Name        	"Drag'n'Drop"
+                    Description 	"So easy even a baby could do it."
+                    DevTime			4
+                    Level			1
+                    CodeArt			1
+                    Submarkets		[ 1; 0; 3; ]
+                    }
+                    {
+                    Name        	"Multitasking"
+                    Description 	"Become an octopus!"
+                    DevTime			3
+                    Level			1
+                    CodeArt			1
+                    Submarkets		[ 1; 0; 3; ]
+                    }
+                    {
+                    Name        	"Progress Bar"
+                    Description 	"Now this is \"Fancy\""
+                    DevTime			4
+                    Level			2
+                    CodeArt			0.85
+                    Submarkets		[ 1; 0; 3; ]
+                    }
+                    {
+                    Name        	"Pre-extraction veiwing"
+                    Description 	"Look at files without decompressing them."
+                    DevTime			4
+                    Level			1
+                    CodeArt			1
+                    Submarkets		[ 1; 0; 3; ]
+                    }
+                ]
+            }
+        ]
+    }

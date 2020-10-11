@@ -1,0 +1,117 @@
+SoftwareType
+    {
+        Name            "Emulation Software"
+        Category        Gaming
+        Description     "Emulate a game system such as the Appldos DS3 or the EggBox One"
+        Random          0.8
+        IdealPrice      8.99
+        Unlock          2000
+        OptimalDevTime  6
+        OSSupport       [Computer; Console; Phone;]
+        OneClient       False
+        InHouse         False
+        SubmarketNames  [ Speed; Compatability; Usability;]
+        Categories 
+            [
+                {
+                Name            "Generic"
+                Description		"You can't really have different types of emulation software..."
+                Popularity		1
+                Submarkets		[ 5; 5; 5; ]
+                Retention		39
+                TimeScale		1
+                Iterative		0.89
+                NameGenerator   emulator
+                }
+            ]
+        Features
+            [
+                {
+                Name            "System"
+                Spec		    System
+                Description	    "Run emulation containers."
+                DevTime		    3
+                CodeArt		    1
+                Submarkets	    [ 1; 1; 1; ]
+                Features
+                    [
+                        {
+                        Name            "Dynamic Ram"
+                        Description     "Allow the emulator to take ram whenever it needs, and put ram back when it is not using it."
+                        Level           1
+                        DevTime         2
+                        CodeArt         1
+                        Submarkets      [ 1; 0; 0; ]
+                        }
+                        {
+                        Name            "Communal Threading"
+                        Description     "Let the emulator communicate with the parent system"
+                        Level           1
+                        DevTime         2
+                        CodeArt         1
+                        Submarkets      [ 1; 2; 0; ]
+                        }
+                        {
+                        Name            "Keybinding"
+                        Description     "Allow the user to bind keys or buttons to certain inputs of the emulator."
+                        Level           1
+                        DevTime         3
+                        CodeArt         0.6
+                        Submarkets      [ 1; 1; 3;]
+                        }
+                        {
+                        Name            "Multitasking"
+                        Description 	"Finally! I can be the octopus!"
+                        Level       	2
+                        DevTime     	5
+                        CodeArt     	1
+                        Submarkets  	[ 2; 0; 1;]
+                        }
+                        {
+                        Name        	"Multithreading"
+                        Description 	"Speeeeeeeed!"
+                        Level       	2
+                        DevTime     	2
+                        CodeArt     	1
+                        Submarkets  	[ 2; 1; 0]
+                        }
+                        {
+                        Name        	"Open Source"
+                        Description 	"Let strangers fix bugs for you at a risk of being hacked!"
+                        Level       	3
+                        CodeArt     	1
+                        DevTime     	8
+                        Submarkets  	0
+                        Script_OnRelease "Product.PutVar(\"OpenSource\", true);"
+                        Script_EndOfDay "/Scripts/Emulator - Script.txt"
+                        }
+                        {
+                        Name        	"Bitcoin Mining"
+                        Description 	"Mine Bitcoin using your users computers. At a risk of getting caught!"
+                        Level       	3
+                        DevTime     	5
+                        CodeArt     	1
+                        Submarkets  	0
+                        Script_OnRelease "Product.PutVar(\"BTC\", true);"
+                        Script_EndOfDay "/Scripts/Emulator - Script.txt"
+                        }
+                    ]           
+                }
+                {
+                Name			"3D Rendering"
+                Spec            3D
+                Description     "With 3D you can see here, here, here and here."
+                DevTime         8
+                CodeArt         0.4
+                Submarkets      [ 1; 2; 3;]
+                }
+                {
+                Name            "2D Rendering"
+                Spec            2D
+                Description     "With the power of 2D, well you can paint a picture...."
+                DevTime         4
+                CodeArt         0.3
+                Submarkets      [ 1; 2; 3;]
+                }
+            ]
+    }

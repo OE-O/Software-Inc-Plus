@@ -1,22 +1,22 @@
 CompanyType
 	{
 	Specialization		"Marketing Corporation"
-	PerYear			0.2
-	Min			4
-	Max			9
+	PerYear				0.2
+	Min					4
+	Max					9
 	Types
 		[
 			{
-			Software	"2D Editor"
-			Chance		1
+			Software		"2D Editor"
+			Chance			1
 			}
 			{
-			Software	"Video Editor"
-			Chance		1
+			Software		"Video Editor"
+			Chance			1
 			}
 			{
-			Software "File Compression Tool"
-			Chance   1
+			Software 		"File Compression Tool"
+			Chance   		1
 			}
 		]
 	}

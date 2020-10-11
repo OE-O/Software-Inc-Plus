@@ -13,172 +13,173 @@ SoftwareType
 	NameGenerator	2DEditor
 	OSSupport		Computer
 	InHouse			True
+	Override		True
 	Features
 		[
 			{
-			Name		"2D graphics"
-			Spec		2D
-			Description "Seems pretty essential for this software type"
-			DevTime		6
-			CodeArt		0.8
-			Submarkets	[ 1; 1; 1 ]
+			Name			"2D graphics"
+			Spec			2D
+			Description 	"Seems pretty essential for this software type"
+			DevTime			6
+			CodeArt			0.8
+			Submarkets		[ 1; 1; 1 ]
 			Features
 				[
 					{
-					Name		"Vector Graphics"
-					Description "Create lines from pixels."
-					DevTime		6
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 4; 0 ]
+					Name			"Vector Graphics"
+					Description 	"Create lines from pixels."
+					DevTime			6
+					Level			2
+					CodeArt			1
+					Submarkets		[ 1; 4; 0 ]
 					}
 					{
-					Name		"Procedural shapes"
-					Description "Who wants to draw a rectangle manually?"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 3; 0 ]
+					Name			"Procedural shapes"
+					Description 	"Who wants to draw a rectangle manually?"
+					DevTime			4
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 3; 0 ]
 					}
 					{
-					Name		"Layers"
-					Description "One on top of the other!"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 1; 0 ]
+					Name			"Layers"
+					Description 	"One on top of the other!"
+					DevTime			4
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 1; 0 ]
 					}
 					{
-					Name		"Dynamic brushes"
-					Description "Amazing! So smooth and bluurrreeedd."
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 3; 0; 1 ]
+					Name			"Dynamic brushes"
+					Description 	"Amazing! So smooth and bluurrreeedd."
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 3; 0; 1 ]
 					}
 					{
-					Name		"Levels and curves"
-					Description "Curvy like a roundabout!"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Name			"Levels and curves"
+					Description 	"Curvy like a roundabout!"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
 					}
 					{
-					Name		"Image effects"
-					Description "Needs more instagram filters."
-					DevTime		6
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Name			"Image effects"
+					Description 	"Needs more instagram filters."
+					DevTime			6
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
 					}
 					{
-					Name		"Text rendering"
-					Description "Type it up like you just don't care!"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Name			"Text rendering"
+					Description 	"Type it up like you just don't care!"
+					DevTime			4
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
 					}
 					{
-					Name		"Brush presets"
-					Description "Thick and thin, wide and short!"
-					DevTime		3
-					Level		1
-					CodeArt		0
-					Submarkets	[ 1; 0; 0 ]
+					Name			"Brush presets"
+					Description 	"Thick and thin, wide and short!"
+					DevTime			3
+					Level			1
+					CodeArt			0
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name		"Brush stroke smoothing"
-					Description "Smooooth..."
-					DevTime		2
-					Level		1
-					CodeArt		0
-					Submarkets	[ 1; 0; 0 ]
+					Name			"Brush stroke smoothing"
+					Description 	"Smooooth..."
+					DevTime			2
+					Level			1
+					CodeArt			0
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name		"Clip art"
-					Description "Cute cartoony apple you got there!"
-					DevTime		4
-					Level		1
-					CodeArt		0
-					Submarkets	[ 0; 1; 0 ]
+					Name			"Clip art"
+					Description 	"Cute cartoony apple you got there!"
+					DevTime			4
+					Level			1
+					CodeArt			0
+					Submarkets		[ 0; 1; 0 ]
 					}
 					{
-					Name		"Liquify"
-					Description "Stretch and pull your pixels"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Name			"Liquify"
+					Description 	"Stretch and pull your pixels"
+					DevTime			4
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
 					}
 					{
-					Name		"Healing brush"
-					Description	"Remove zits, spots, specks, people, buildings, etc."
-					DevTime		3
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Name			"Healing brush"
+					Description		"Remove zits, spots, specks, people, buildings, etc."
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
 					}
 					{
-					Name        "Red Eye Filter"
-					Description "Remove the evil red eyes of doom!"
-					DevTime     3
-					Level       2
-					CodeArt     1
-					Submarkets  [0; 0; 1;]
+					Name        	"Red Eye Filter"
+					Description 	"Remove the evil red eyes of doom!"
+					DevTime     	3
+					Level       	2
+					CodeArt     	1
+					Submarkets  	[0; 0; 1;]
 					}
 					{
-					Name		"Beautify"
-					Description	"Flatter people by making them look better in photos, so they are less likely to refund your product"
-					DevTime		6
-					Level		3
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
-					Script_AfterSales "/Scripts/2DEditor_Beautify.txt"
+					Name			"Beautify"
+					Description		"Flatter people by making them look better in photos, so they are less likely to refund your product"
+					DevTime			6
+					Level			3
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
+					Script_AfterSales "/Scripts/2D Editor - Beautify.txt"
 					}
 				]
 			}
 			{
-			Name		System
-			Spec		System
-			DevTime		2
-			CodeArt		1
-			Submarkets	[ 1; 1; 1 ]
+			Name			System
+			Spec			System
+			DevTime			2
+			CodeArt			1
+			Submarkets		[ 1; 1; 1 ]
 			Features
 				[
 					{
-					Name		"RAW image import"
-					Description	"If you need to pull some extra colour from your colours"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Name			"RAW image import"
+					Description		"If you need to pull some extra colour from your colours"
+					DevTime			4
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
 					}
 					{
-					Name		"Drawing tablet support"
-					Description "Allow users to plug in a drawing tablet!"
-					DevTime		3
-					Unlock      1985
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Name			"Drawing tablet support"
+					Description 	"Allow users to plug in a drawing tablet!"
+					DevTime			3
+					Unlock      	1985
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name        "Plugins"
-					Description "Allow users to create plugins for the software!"
-					DevTime     5
-					Level       2
-					CodeArt     1
-					Submarkets  [1; 1; 1;]
+					Name        	"Plugins"
+					Description 	"Allow users to create plugins for the software!"
+					DevTime     	5
+					Level       	2
+					CodeArt     	1
+					Submarkets  	[1; 1; 1;]
 					}
 					{
-					Name        "Open 3D Objects"
-					Description "Allow the users to open 3D objects and turn them into 2D images!"
-					DevTime 7
-					Level 2
-					CodeArt 1
-					Submarkets [1; 2; 0;]
+					Name        	"Open 3D Objects"
+					Description 	"Allow the users to open 3D objects and turn them into 2D images!"
+					DevTime 		7
+					Level 			2
+					CodeArt 		1
+					Submarkets 		[1; 2; 0;]
 					}
 				]
 			}

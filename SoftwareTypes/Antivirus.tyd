@@ -16,61 +16,61 @@ SoftwareType
 	Features
 		[
 			{
-			Name		"System Scanning"
-			Spec		System
-			Description "Protect against local threats against your device."
-			DevTime		2
-			CodeArt		1
-			Submarkets	[ 1; 0; 0 ]
+			Name			"System Scanning"
+			Spec			System
+			Description 	"Protect against local threats against your device."
+			DevTime			2
+			CodeArt			1
+			Submarkets		[ 1; 0; 0 ]
 			Features
 				[
 					{
-					Name		"File scanner"
-					Description "Scan for viruses in the background causing hilarious file locks randomly"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Name			"File scanner"
+					Description 	"Scan for viruses in the background causing hilarious file locks randomly"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name		"Application scanner"
-					Description "Scan for malware in the background causing hilarious crashes randomly"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 1 ]
+					Name			"Application scanner"
+					Description 	"Scan for malware in the background causing hilarious crashes randomly"
+					DevTime			4
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 1; 1 ]
 					}
 					{
-					Name		"Anti-theft"
-					Description "Why not let your computer know when it's been stolen"
-					DevTime		3
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 0; 1 ]
+					Name			"Anti-theft"
+					Description 	"Why not let your computer know when it's been stolen"
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 1; 0; 1 ]
 					}
 					{
-					Name		"File encryption"
-					Description "Better keep that secret cookie recipe under lock! Dont want the babushkas stealing it!"
-					DevTime		2
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Name			"File encryption"
+					Description 	"Better keep that secret cookie recipe under lock! Dont want the babushkas stealing it!"
+					DevTime			2
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name 		"Anti Ad-ware"
-					Description "Stop annoying popups or software getting into your pc without you knowing!"
-					DevTime     2
-					Level       2
-					CodeArt     1
-					Submarkets	[ 1; 0; 0 ]
+					Name 			"Anti Ad-ware"
+					Description 	"Stop annoying popups or software getting into your pc without you knowing!"
+					DevTime     	2
+					Level       	2
+					CodeArt     	1
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name        "Anti Antiware"
-					Description "Stop being tricked into thinking your antivirus is saying something is fine, when really its not!"
-					DevTime     3
-					Level       2
-					CodeArt     1
-					Submarkets [ 1; 0; 0;]
+					Name        	"Anti Antiware"
+					Description 	"Stop being tricked into thinking your antivirus is saying something is fine, when really its not!"
+					DevTime     	3
+					Level       	2
+					CodeArt     	1
+					Submarkets 		[ 1; 0; 0;]
 					}
 					
 				]
@@ -87,118 +87,119 @@ SoftwareType
 			Features
 				[
 					{
-					Name		"Malware alerts"
-					DevTime		1
-					Level		1
-					CodeArt		0.5
-					Submarkets	[ 0; 1; 2 ]
+					Name			"Malware alerts"
+					DevTime			1
+					Level			1
+					CodeArt			0.5
+					Submarkets		[ 0; 1; 2 ]
 					}
 					{
-					Name		"Hacking alerts"
-					DevTime		2
-					Level		1
-					CodeArt		0.5
-					Submarkets	[ 0; 1; 2 ]
+					Name			"Hacking alerts"
+					DevTime			2
+					Level			1
+					CodeArt			0.5
+					Submarkets		[ 0; 1; 2 ]
 					}
 					{
-					Name		"File quarantine"
-					DevTime		1
-					Level		1
-					CodeArt		0.5
-					Submarkets	[ 1; 0; 2 ]
+					Name			"File quarantine"
+					DevTime			1
+					Level			1
+					CodeArt			0.5
+					Submarkets		[ 1; 0; 2 ]
 					}
 					{
-					Name		"Password management"
-					Description "Avoid filling your inbox with password resets"
-					DevTime		3
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 0; 2 ]
+					Name			"Password management"
+					Description 	"Avoid filling your inbox with password resets"
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 1; 0; 2 ]
 					}
 					{
-					Name        "File Exceptions"
-					Description "\"We have detected a threat in SoftwareInc.exe\" *internal screaming*"
-					DevTime     3
-					Level       2
-					CodeArt     1
-					Submarkets  [1; 0; 2;]
+					Name        	"File Exceptions"
+					Description 	"\"We have detected a threat in SoftwareInc.exe\" *internal screaming*"
+					DevTime     	3
+					Level       	2
+					CodeArt     	1
+					Submarkets  	[1; 0; 2;]
 					}
 				]
 			}
 			{
-			Name		Networking
-			Spec		Network
-			Optional	True
-			Description "Protect against external threats"
-			DevTime		1
-			CodeArt		1
-			Submarkets	[ 0; 1; 1 ]
+			Name			Networking
+			Spec			Network
+			Optional		True
+			Description 	"Protect against external threats"
+			DevTime			1
+			CodeArt			1
+			Submarkets		[ 0; 1; 1 ]
 			Features
 				[
 					{
-					Name		"Port blocking"
-					DevTime		1
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Name			"Port blocking"
+					DevTime			1
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name		"Application access control"
-					Description "Solitaire Extreme does not need to access your system files"
-					DevTime		3
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 1 ]
+					Name			"Application access control"
+					Description 	"Solitaire Extreme does not need to access your system files"
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 1; 1 ]
 					}
 					{
-					Name		"IP filtering"
-					DevTime		1
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 0; 1 ]
+					Name			"IP filtering"
+					DevTime			1
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 0; 1 ]
 					}
 					{
-					Name		"Anti-spam"
-					Description "Receive less golden opportunities from your long lost relatives"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Name			"Anti-spam"
+					Description 	"Receive less golden opportunities from your long lost relatives"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
 					}
 					{
-					Name		"Ad blocker"
-					Description "Remove those things that make news sites unreadable"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Name			"Ad blocker"
+					Description 	"Remove those things that make news sites unreadable"
+					DevTime			4
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
 					}
 					{
-					Name		"Virus database"
-					Description "Automagically keep your users' virus definitions up to date"
-					Server		0.0001
-					DevTime		5
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 1; 0 ]
+					Name			"Virus database"
+					Description 	"Automagically keep your users' virus definitions up to date"
+					Server			0.0001
+					DevTime			5
+					Level			2
+					CodeArt			1
+					Submarkets		[ 1; 1; 0 ]
 					}
 					{
-					Name        "Firewall"
-					Description "\"We will build a wall to make Windows XP great again!\""
-					DevTime     5
-					Level       2
-					CodeArt     1
-					Submarkets  [1; 1; 0;]
+					Name        	"Firewall"
+					Description 	"\"We will build a wall to make Windows XP great again!\""
+					DevTime     	5
+					Level       	2
+					CodeArt     	1
+					Submarkets  	[1; 1; 0;]
 					}
 					{
-					Name		"Datamining"
-					Description	"Sell your users' data to make an extra {Currency:0.25} per active user, at the risk of getting caught"
-					Server		0.0005
-					DevTime		4
-					Level		3
-					CodeArt		1
-					Submarkets	0
-					Script_EndOfDay "/Scripts/Antivirus_Datamining.txt"
+					Name			"Data Mining"
+					Description		"Sell your users' data to make an extra {Currency:0.25} per active user, at the risk of getting caught"
+					Server			0.0005
+					DevTime			4
+					Level			3
+					CodeArt			1
+					Submarkets		0
+					Script_OnRelease "Product.PutVar(\"DataMining\", true);"
+					Script_EndOfDay "/Scripts/Antivirus - Data Mining.txt"
 					}
 				]
 			}

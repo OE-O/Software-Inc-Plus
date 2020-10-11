@@ -48,135 +48,136 @@ SoftwareType
 	Features
 		[
 			{
-			Name		"3D graphics"
-			Spec		3D
-			DevTime		6
-			CodeArt		0.5
-			Submarkets	[ 1; 1; 1 ]
+			Name			"3D graphics"
+			Spec			3D
+			DevTime			6
+			CodeArt			0.5
+			Submarkets		[ 1; 1; 1 ]
 			Features
 				[
 					{
-					Name		"Sculpting"
-					Description "Pretend the points are clay"
-					DevTime		8
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Name			"Sculpting"
+					Description 	"Pretend the points are clay"
+					DevTime			8
+					Level			2
+					CodeArt			1
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name		"Path tracing"
-					Description "Shoot rays into the points to make a picture"
-					DevTime		8
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Name			"Path tracing"
+					Description 	"Shoot rays into the points to make a picture"
+					DevTime			8
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
 					}
 					{
-					Name		"Skinning"
-					Description "Make the points move themselves"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Name			"Skinning"
+					Description 	"Make the points move themselves"
+					DevTime			4
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
 					}
 					{
-					Name		"Procedural objects"
-					Description "Generate points automagically"
-					DevTime		3
-					Level		1
-					CodeArt		0.5
-					Submarkets	[ 1; 0; 0 ]
+					Name			"Procedural objects"
+					Description 	"Generate points automagically"
+					DevTime			3
+					Level			1
+					CodeArt			0.5
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name		"Physics simulation"
-					Description "Make the points interact"
-					DevTime		8
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 1 ]
+					Name			"Physics simulation"
+					Description 	"Make the points interact"
+					DevTime			8
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 1; 1 ]
 					}
 					{
-					Name		"Liquid simulation"
-					Description "Spill points all over the place"
-					DevTime		6
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Name			"Liquid simulation"
+					Description 	"Spill points all over the place"
+					DevTime			6
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
 					}
 					{
-					Name		"Hair simulation"
-					Description "Make lines between the points"
-					DevTime		5
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 1; 0 ]
+					Name			"Hair simulation"
+					Description 	"Make lines between the points"
+					DevTime			5
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 1; 0 ]
 					}
 					{
-					Name		"Particles"
-					Description "Spray points all over the place"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 2; 1 ]
+					Name			"Particles"
+					Description 	"Spray points all over the place"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 2; 1 ]
 					}
 					{
-					Name		"Boolean operations"
-					Description "If point and point then point"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Name			"Boolean operations"
+					Description 	"If point and point then point"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
 					}
 					{
-					Name		"Mesh subdivision"
-					Description "Add points between points"
-					DevTime		2
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Name			"Mesh subdivision"
+					Description 	"Add points between points"
+					DevTime			2
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name		"Inverse kinematics"
-					Description "Position points neatly between other points"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Name			"Inverse kinematics"
+					Description 	"Position points neatly between other points"
+					DevTime			4
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
 					}
 					{
-					Name		"Bit mining"
-					Description	"Mine bitcoin using your users' GPU to make an extra {Currency:0.1} per active user, at the risk of getting caught"
-					DevTime		6
-					Level		3
-					CodeArt		1
-					Submarkets	0
-					Script_EndOfDay "/Scripts/3DEditor_Bitmining.txt"
+					Name			"Bitcoin mining"
+					Description		"Mine bitcoin using your users' GPU to make an extra {Currency:0.1} per active user, at the risk of getting caught"
+					DevTime			6
+					Level			3
+					CodeArt			1
+					Submarkets		0
+					Script_OnRelease "Product.PutVar(\"BTC\", true);"
+					Script_EndOfDay "/Scripts/3D Editor - BTC.txt"
 					}
 				]
 			}
 			{
-			Name		System
-			Spec		System
-			DevTime		2
-			CodeArt		1
-			Submarkets	[ 1; 1; 1 ]
+			Name			System
+			Spec			System
+			DevTime			2
+			CodeArt			1
+			Submarkets		[ 1; 1; 1 ]
 			Features
 				[
 					{
-					Name		"GPU rendering"
-					Description "Use point hardware to make points faster"
-					DevTime		6
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Name			"GPU rendering"
+					Description 	"Use point hardware to make points faster"
+					DevTime			6
+					Level			2
+					CodeArt			1
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name		"Motion capture"
-					Description "Convert real life motion to point motion"
-					DevTime		6
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Name			"Motion capture"
+					Description 	"Convert real life motion to point motion"
+					DevTime			6
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
 					}
 				]
 			}

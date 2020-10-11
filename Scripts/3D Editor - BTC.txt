@@ -1,14 +1,14 @@
-if (Product.GetVar("Datamining", true))//Check if player has been caught
+if (Product.GetVar("BTC", true))//Check if player has been caught
 	{
-	var extra = Product.Userbase * 0.25;//Calculate extra income
+	var extra = Product.Userbase * 0.1;//Calculate extra income
 	Product.DevCompany.MakeTransaction(extra, Sales, "Datamining");//Add money
 	Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
-	if (Random() * Product.Userbase > 250000)//Random chance of getting caught
+	if (Random() * Product.Userbase > 400000)//Random chance of getting caught
 		{
 		LaunchLawsuit("SpyingOnUsers", Product.Sum, 1);//Create anonymous lawsuit
 		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);//Remove fans and market recognition from player in category
 		Product.Userbase = Product.Userbase * 0.05;//Remove 95% of active users
 		Product.KillAwareness();//Remove all marketing
-		Product.PutVar("Datamining", false);//Mark player as caught for this product
+		Product.PutVar("BTC", false);//Mark player as caught for this product
 		}
 	}

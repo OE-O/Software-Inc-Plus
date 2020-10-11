@@ -1,30 +1,30 @@
 CompanyType
 	{
 	Specialization		"Security"
-	PerYear			0.2
-	Min			7
-	Max			13
+	PerYear				0.2
+	Min					7
+	Max					13
 	Types
 		[
 			{
-			Software	"Server Operating System"
-			Chance		0.5
+			Software		"Server Operating System"
+			Chance			0.5
 			}
 			{
-			Software	"Operating System"
-			Chance		0.5
+			Software		"Operating System"
+			Chance			0.5
 			}
 			{
-			Software "Antivirus"
-			Chance 0.9
+			Software 		"Antivirus"
+			Chance 			0.9
 			}
 			{
-			Software "File Compression Tool"
-			Chance   0.75
+			Software 		"File Compression Tool"
+			Chance   		0.75
 			}
 			{
-			Software "VPN"
-			Chance 0.9
+			Software 		"VPN"
+			Chance 			0.9
 			}
 		]
 	}

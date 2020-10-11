@@ -3,6 +3,13 @@ SoftwareType
 	Name			"Game"
 	Category		Gaming
 	Description		"Interactive art."
+	Override		True
+	Random			0.6
+	IdealPrice		80
+	OptimalDevTime	40
+	Dependencies    ["Game Editor"]
+	OSSupport		True
+	SubmarketNames	[ Gameplay; Graphics; Story ]
 	Categories
 		[
 			{
@@ -67,68 +74,63 @@ SoftwareType
 			Submarkets		[ 3; 4; 1 ]
 			}
 		]
-	Random			0.6
-	IdealPrice		80
-	OptimalDevTime	40
-	Dependencies    ["Game Editor"]
-	OSSupport		True
-	SubmarketNames	[ Gameplay; Graphics; Story ]
 	Features
 		[
 			{
-			Name		Game design
-			Spec		System
-			DevTime		4
-			CodeArt		1
-			Submarkets	[ 1; 0; 1 ]
+			Name			Game design
+			Spec			System
+			DevTime			4
+			CodeArt			1
+			Dependencies	"Game Editor"
+			Submarkets		[ 1; 0; 1 ]
 			Features
 				[
 					{
-					Name		"Open world"
-					DevTime		8
-					Level		2
-					CodeArt		1
-					Submarkets	[ 3; 1; 2 ]
+					Name			"Open world"
+					DevTime			8
+					Level			2
+					CodeArt			1
+					Submarkets		[ 3; 1; 2 ]
 					}
 					{
-					Name		"Physics"
-					Description	"Bouncy stuff"
-					DevTime		6
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Name			"Physics"
+					Description		"Bouncy stuff"
+					DevTime			6
+					Level			2
+					CodeArt			1
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name		"Dialog trees"
-					Description	"Give the player a voice, and then make their character say something slightly different in-game"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Name			"Dialog trees"
+					Description		"Give the player a voice, and then make their character say something slightly different in-game"
+					DevTime			4
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 0; 1 ]
 					}
 					{
-					Name		"Branching story"
-					Description	"Multiple different paths all leading to the same destination"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 0; 5 ]
+					Name			"Branching story"
+					Description		"Multiple different paths all leading to the same destination"
+					DevTime			4
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 0; 5 ]
 					}
 					{
-					Name		"Mod support"
-					Description	"You can mod this feature out of the game if you want"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Name			"Mod support"
+					Description		"You can mod this feature out of the game if you want"
+					DevTime			4
+					Level			2
+					CodeArt			1
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name		"Customizable character"
-					Description "This is cheaper than plastic surgery"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 1; 1 ]
+					Name			"Customizable character"
+					Description 	"This is cheaper than plastic surgery"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 1; 1 ]
 					}
 				]
 			}
@@ -142,38 +144,38 @@ SoftwareType
 			Features
 				[
 					{
-					Name        "Text"
-					Description "You don't need fancy graphics"
-					DevTime     2
-					Level       1
-					CodeArt     0.2
-					Submarkets  [1; 1; 3]
+					Name			"Text"
+					Description 	"You don't need fancy graphics"
+					DevTime     	2
+					Level       	1
+					CodeArt     	0.2
+					Submarkets  	[1; 1; 3]
 					}
 					{
-					Name        "2D Characters"
-					Description "Make little perople run across the bottom of the screen!"
-					DevTime     3
-					Level       1
-					CodeArt     0.6
-					Submarkets  [2; 2; 1]
+					Name        	"2D Characters"
+					Description 	"Make little perople run across the bottom of the screen!"
+					DevTime     	3
+					Level       	1
+					CodeArt     	0.6
+					Submarkets  	[2; 2; 1]
 					}
 					{
-					Name		"Advanced HUD"
-					Description	"Add some more GUI to your game"
-					DevTime		4
-					Level		2
-					CodeArt		0.8
-					Unlock      1982
-					Submarkets	[ 1; 2; 0 ]
+					Name			"Advanced HUD"
+					Description		"Add some more GUI to your game"
+					DevTime			4
+					Level			2
+					CodeArt			0.8
+					Unlock      	1982
+					Submarkets		[ 1; 2; 0 ]
 					}
 					{
-					Name		"Post-processing"
-					Description	"\#Bloom"
-					DevTime		3
-					Level		2
-					CodeArt		0.75
-					Unlock      1985
-					Submarkets	[ 0; 1; 0 ]
+					Name			"Post-processing"
+					Description		"\#Bloom"
+					DevTime			3
+					Level			2
+					CodeArt			0.75
+					Unlock      	1985
+					Submarkets		[ 0; 1; 0 ]
 					}
 				]
 			}
@@ -188,50 +190,51 @@ SoftwareType
 			Features
 				[
 					{
-					Name		"Shadows"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Name			"Shadows"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
 					}
 					{
-					Name		"Cutscenes"
-					DevTime		6
-					Level		2
-					CodeArt		0
-					Submarkets	[ 0; 1; 2 ]
+					Name			"Cutscenes"
+					Description		"Mini movies"
+					DevTime			6
+					Level			2
+					CodeArt			0
+					Submarkets		[ 0; 1; 2 ]
 					}
 					{
-					Name		"VR"
-					Description	"Virtual Reality"
-					DevTime		6
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 2; 0 ]
+					Name			"VR"
+					Description		"Virtual Reality"
+					DevTime			6
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 2; 0 ]
 					}
 					{
-					Name		"Facial animations"
-					DevTime		4
-					Level		2
-					CodeArt		0.8
-					Submarkets	[ 0; 4; 1 ]
+					Name			"Facial animations"
+					DevTime			4
+					Level			2
+					CodeArt			0.8
+					Submarkets		[ 0; 4; 1 ]
 					}
 					{
-					Name		"Procedural generation"
-					DevTime		8
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Name			"Procedural generation"
+					DevTime			8
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
 					}
 					{
-					Name		"Broken Physics"
-					Description	"Boost your launch marketing with viral videos by introducing some bugs to your physics objects"
-					DevTime		4
-					Level		3
-					CodeArt		0
-					Submarkets	0
-					Script_OnRelease "/Scripts/Game_BrokenPhysicsA.txt"
-					Script_WorkItemChange "/Scripts/Game_BrokenPhysicsB.txt"
+					Name			"Broken Physics"
+					Description		"Boost your launch marketing with viral videos by introducing some bugs to your physics objects"
+					DevTime			4
+					Level			3
+					CodeArt			0
+					Submarkets		0
+					Script_OnRelease "Product.AddToMarketing(MarketSimulation.GetMaxAwareness(Product) * 0.75);"
+					Script_WorkItemChange "/Scripts/Game - Broken Physics.txt"
 					}
 				]
 			}
@@ -245,36 +248,36 @@ SoftwareType
 			Features
 				[
 					{
-					Name		"Recorded dialog"
-					DevTime		6
-					Level		2
-					CodeArt		0
-					Submarkets	[ 0; 0; 1 ]
+					Name			"Recorded dialog"
+					DevTime			6
+					Level			2
+					CodeArt			0
+					Submarkets		[ 0; 0; 1 ]
 					}
 					{
-					Name		"Adaptive music"
-					DevTime		3
-					Level		1
-					CodeArt		0.25
-					Submarkets	[ 1; 0; 1 ]
+					Name			"Adaptive music"
+					DevTime			3
+					Level			1
+					CodeArt			0.25
+					Submarkets		[ 1; 0; 1 ]
 					}
 					{
-					Name        "Famous Actors"
-					Description "Pay famous actors royalties to be the voices in your game"
-					DevTime     3
-					Level       3
-					CodeArt     0
-					Submarkets  0
-					Script_AfterSales "/Scripts/Game_FamousActors.txt"
+					Name        	"Famous Actors"
+					Description 	"Pay famous actors royalties to be the voices in your game"
+					DevTime     	3
+					Level       	3
+					CodeArt     	0
+					Submarkets  	0
+					Script_AfterSales "/Scripts/Game - Actors.txt"
 					}
 					{
-					Name		"Digital exclusive music"
-					Description	"Convert some of your physical sales to digital, loosing some of your physical sales in the process"
-					DevTime		2
-					Level		3
-					CodeArt		0
-					Submarkets	0
-					Script_AfterSales "/Scripts/Game_DEM.txt"
+					Name			"Digital exclusive music"
+					Description		"Convert some of your physical sales to digital, loosing some of your physical sales in the process"
+					DevTime			2
+					Level			3
+					CodeArt			0
+					Submarkets		0
+					Script_AfterSales "/Scripts/Game - DEM.txt"
 					}
 				]
 			}
@@ -291,31 +294,31 @@ SoftwareType
 			Features
 				[
 					{
-					Name		"MMO"
-					Description "Massively Multiplayer Online"
-					DevTime		10
-					Level		2
-					CodeArt		1
-					Server		0.002
-					Submarkets	[ 1; 0; 0 ]
+					Name			"MMO"
+					Description 	"Massively Multiplayer Online"
+					DevTime			10
+					Level			2
+					CodeArt			1
+					Server			0.002
+					Submarkets		[ 1; 0; 0 ]
 					}
 					{
-					Name        "Chatting System"
-					Description "Chat to your friends!"
-					DevTime     7
-					Level       2
-					CodeArt     1
-					Server      0.0001
-					Submarkets  [1; 0; 0]
+					Name        	"Chatting System"
+					Description 	"Chat to your friends!"
+					DevTime     	7
+					Level       	2
+					CodeArt     	1
+					Server      	0.0001
+					Submarkets  	[1; 0; 0]
 					}
 					{
-					Name        "Parties"
-					Description "Create parties where you can play with your friends in a squad. \"Where we dropping bois?\""
-					DevTime     5
-					Level       2
-					CodeArt     1
-					Server 	    0.0001
-					Submarkets  [1; 0; 0;]
+					Name        	"Parties"
+					Description 	"Create parties where you can play with your friends in a squad. \"Where we dropping bois?\""
+					DevTime     	5
+					Level       	2
+					CodeArt     	1
+					Server 	    	0.0001
+					Submarkets  	[1; 0; 0;]
 					} 
 				]
 			}

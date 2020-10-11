@@ -1,0 +1,261 @@
+SoftwareType 
+    {
+        Name			"Game Editor"
+        Category		Gaming 
+        Description		"Create interactive art."
+        Categories
+            [
+                {
+                Name			"2D"
+                Description		"Easily create 2D games"
+                Popularity		0.6
+                Retention		24
+                TimeScale		1
+                Iterative		0.8
+                NameGenerator	GameEditor
+                Submarkets		[ 2; 3; 2; ]
+                }
+                {
+                Name			"3D"
+                Description		"Easily create 3D games"
+                Popularity		0.6
+                Retention		24
+                TimeScale		1
+                Iterative		0.8
+                NameGenerator	GameEditor
+                Submarkets		[ 2; 3; 1; ]
+                }
+            ]	
+        Random			0.6
+        IdealPrice		80
+        OptimalDevTime	40
+        Dependencies    ["2D Editor"; "3D Editor";]
+        OSSupport		True
+        SubmarketNames	[ Usability; Graphics; Compatability;]
+        Features    
+            [
+                {
+                Name			2D
+                Description 	"GUIs and stuff."
+                Spec			2D
+                DevTime			4
+                CodeArt			1
+                Submarkets		[ 1; 1; 1 ]
+                Features
+                    [
+                        {
+                        Name			"GUI Editor"
+                        Description 	"Drag and drop and make that baby work!"
+                        DevTime     	3
+                        Level       	1
+                        CodeArt     	1
+                        Submarkets  	[1; 2; 1;]
+                        }
+                        {
+                        Name       		"GUI Themes"
+                        DevTime     	3
+                        Level       	1
+                        CodeArt     	1
+                        Submarkets  	[1; 2; 1;]
+                        }
+                        {
+                        Name        	"GUI Animations"
+                        DevTime     	3
+                        Level       	1
+                        CodeArt     	1
+                        Submarkets  	[1; 2; 1;]
+                        }
+                        {
+                        Name        	"Text Based Scenes"
+                        DevTime     	1
+                        Level       	2
+                        CodeArt     	1
+                        Submarkets  	[1; 1; 1;]
+                        }
+                        {
+                        Name        	"Tile Maps"
+                        Unlock      	1980
+                        Level       	2
+                        DevTime 		2
+                        CodeArt     	1
+                        Submarkets  	[1; 2; 0;]
+                        }
+                        {
+                        Name        	"Advanced Tile Maps"
+                        Description 	"Hexagons for life."
+                        Level        	3
+                        Unlock       	1990
+                        DevTime 		4
+                        CodeArt      	1
+                        Submarkets   	0                  
+                        }
+                    ]                           
+                }
+                {
+                Name			"3D"
+                Spec        	3D
+                DevTime     	6
+                Unlock      	1980
+                Optional    	True
+                CodeArt     	1
+                Submarkets  	[1; 1; 1;]
+                Features 
+                    [
+                        {
+                        Name			"Dynamic Texture Import"
+                        Description 	"Automatically resize, color and edit textures onto models"
+                        DevTime     	5
+                        Level       	1
+                        CodeArt     	1
+                        Submarkets  	[1; 2; 0;]
+                        }
+                        {
+                        Name			"Mesh Generator"
+                        Description 	"Generate meshes using a simple click of a button."
+                        DevTime     	3
+                        Level       	2
+                        CodeArt     	0.95
+                        Submarkets  	[1; 2; 0]
+                        }
+                        {
+                        Name			"Bump Maps"
+                        Description 	"Make the Texture appear to have more detail"
+                        DevTime     	5
+                        Level       	2
+                        CodeArt     	0.6
+                        Submarkets  	[1; 1; 0;]
+                        }
+                        {
+                        Name        	"Occular Occlusion"
+                        Description 	"Shadows!"
+                        DevTime     	5
+                        Level       	2
+                        Unlock      	1985
+                        CodeArt    		1
+                        Submarkets  	[1; 1; 0;]
+                        }
+                        {
+                        Name        	"Ray Tracing"
+                        Description 	"The god rays! Get an extra {Currency:0.01} per user!"
+                        Unlock      	2010
+                        DevTime 		3
+                        CodeArt 		1
+                        Level       	3
+                        Submarkets  	0
+                        Script_EndOfDay "/Scripts/Game Editor - Ray Tracing.txt"
+                        }
+                    ]
+                }
+                {
+                Name			"Audio"
+                Spec        	Audio
+                DevTime     	5
+                CodeArt     	0.4
+                Submarkets  	[1; 1; 1;]
+                Features 
+                    [
+                        {
+                        Name			"Sound Importer"
+                        Description 	"Put really cool sounds into your game!"
+                        DevTime     	3
+                        Level       	1
+                        CodeArt     	1
+                        Submarkets  	[2; 0; 1;]
+                        }
+                        {
+                        Name        	"Surround Sound"
+                        Description 	"Import sounds that are in space into your game."
+                        DevTime     	3
+                        Level       	2
+                        Unlock      	2000
+                        CodeArt     	1
+                        Submarkets  	[2; 0; 1;]
+                        }
+                        {
+                        Name        	"Ambience"
+                        Description 	"Add ambient sounds to your game."
+                        DevTime     	3
+                        Level       	2
+                        Unlock      	1980
+                        CodeArt     	1
+                        Submarkets  	[2; 0; 1;]
+                        }
+                        {
+                        Name        	"Dynamic Voices"
+                        Unlock      	2020
+                        DevTime     	7
+                        Level       	2
+                        CodeArt     	1
+                        Submarkets  	[2; 0; 0;]
+                        }
+                        {
+                        Name        	"Audio Mixing GUI"
+                        DevTime     	3
+                        Level       	2
+                        CodeArt     	1
+                        Submarkets  	[2; 0; 1;]
+                        }
+                    ]
+                }
+                {
+                Name			"Misc"
+                Spec       		System
+                DevTime     	6
+                CodeArt     	0
+                Submarkets  	[1; 0; 2;]
+                Features 
+                    [
+                        {
+                        Name			"Automatic Game Object Generator"
+                        Description 	"Automatically create game objects and save time of the users."
+                        DevTime			8
+                        Level			1
+                        CodeArt			1
+                        Submarkets		[ 3; 0; 0; ]
+                        }
+                        {
+                        Name        	"Code Cleanup Tool"
+                        Description 	"MattA would love this feature! Haha!"
+                        DevTime     	8
+                        Level       	1
+                        CodeArt     	1
+                        Submarkets  	[2; 0; 0;]
+                        }
+                        {
+                        Name        	"Purge Tool"
+                        Description 	"Delete methods, sprites and other objects that aren't used."
+                        DevTime     	2
+                        CodeArt     	0
+                        Level       	1
+                        Submarkets  	[2; 0; 1;] 
+                        }
+                        {
+                        Name        	"Advertisement Support"
+                        Description 	"Add adverts!"
+                        Server      	0.0001
+                        DevTime     	3
+                        Level       	2
+                        CodeArt     	1
+                        Submarkets  	[1; 0; 0;]
+                        }
+                        {
+                        Name        	"User Feedback Form Creator"
+                        Description 	"Add Feedback!"
+                        Server      	0.0001
+                        DevTime     	4
+                        Level       	2
+                        CodeArt     	1 
+                        Submarkets  	[2; 1; 1;]
+                        }
+                        {
+                        Name        	"Collision detection"
+                        Description 	"Let games detect when something collides with something else"
+                        DevTime     	4
+                        Level       	2
+                        CodeArt     	0.9
+                        Submarkets  	[2; 1; 1;]
+                        }
+                    ]
+                }
+            ]   
+    }

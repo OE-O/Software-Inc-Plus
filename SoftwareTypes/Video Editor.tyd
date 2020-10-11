@@ -1,0 +1,307 @@
+SoftwareType
+	{
+	Name			"Video Editor"
+	Category		"Video Editing and Cinematography."
+	Description		"Easily make videos using a video editor!"
+	Random			0.1
+	IdealPrice		50
+	OptimalDevTime	46
+	OSSupport		Computer
+	OneClient		False
+	InHouse			False
+	SubmarketNames	[ Effects; Quality; Usability; ]
+	Categories
+		[
+			{
+			Name			"Story Based"
+			Description		"Ah, the days of windows media player. Such good days..."
+			Popularity		0.5
+			Submarkets		[ 5; 0; 2; ]
+			Retention		24
+			TimeScale		1
+			Iterative		0.75
+			NameGenerator   videoEditor
+			}
+			{
+			Name			"Professional Based"
+			Description		"Perfect for cinematography companies!"
+			Popularity		0.9
+			Submarkets		[ 5; 0; 2; ]
+			Retention		24
+			Unlock          2000
+			TimeScale		1
+			Iterative		0.75
+			NameGenerator   videoEditor
+			}
+		]
+	Features
+		[
+			{
+			Name			"Video"
+			Spec			Video
+			Description		"Edit videos!"
+			DevTime			3
+			CodeArt			1
+			Submarkets		[ 0; 1; 0; ]
+			Features
+				[
+					{
+					Name			"Trim Tool"
+					Description 	"Cut a bit of this, and a bit of that."
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name			"Overlaying"
+					Description 	"Two vidoes at once? o_o"
+					DevTime			4
+					Level			1
+					CodeArt			1
+					Submarkets		[ 2; 1; 0 ]
+					}
+					{
+					Name			"Chromakeying"
+					Description 	"Black and White, Yellow and Green"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 1; 0 ]
+					}
+					{
+					Name			"Colour Grading"
+					Description 	"Make your colours pop a little more!"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name			"Upload to the internet."
+					Description 	"Upload your videos straight to the internet, without needing to render it!"
+					DevTime			3
+					Unlock      	1990
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name			"Motion tracking"
+					Description 	"Easily track the motion of the camera"
+					DevTime			3
+					Level			2
+					Unlock      	1990
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name			"Auto Stablisation"
+					Description 	"Automatically remove camera shakes and bumps."
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 2; 1 ]
+					}
+					{
+					Name			"Quality Improver"
+					Description 	"Improve that terrible quality video of aliens you found on the internet."
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name			"Timelapse Editor"
+					Description 	"\"Run forest, run!\" -=≡Σ((( つ•̀ω•́)つ"
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name        	"Macro Support"
+					Description 	"Make any key on your keyboard perform an action"
+					DevTime     	2
+					Level       	2
+					CodeArt     	1
+					Submarkets  	[ 0; 1; 2]
+					SoftwareCategories [Professional Based;]
+					}
+					{
+					Name			"Bitcoin Mining"
+					Description 	"Use a bit of your clients GPU's when rendering videos to earn {Currency:0.05} per user."
+					DevTime			3
+					Level			3
+					CodeArt			1
+					Submarkets		0
+					Script_OnRelease "Product.PutVar(\"BTC\", true);"
+					Script_EndOfDay "/Scripts/Video Editor - Script.txt"
+					}
+				]
+			}
+			{
+			Name			"Audio Mixing"
+			Spec		 	Audio
+			Dependencies 	"Audio Tool"
+			Optional	 	True
+			Description	 	"Mix that cinematic music up a bit!"
+			DevTime		 	4
+			CodeArt		 	1
+			Submarkets	 	[ 1; 3; 1; ]
+			Features 
+				[
+					{
+					Name			"Audio Trimmer"
+					Description 	"Cut a bit of this, a bit of that."
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name			"Pitch Shift"
+					Description 	"The voices are all squeaky"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name        	"Automatic Silencer"
+					Description 	"Remove really annoying background echos!"
+					DevTime     	3
+					Level       	2
+					CodeArt     	1
+					Submarkets  	[0; 1; 0;]
+					SoftwareCategories [Professional Based;]
+					}
+					{
+					Name			"Amplify"
+					Description 	"\"I think it needs to be LOUDER\""
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name			"Echo"
+					Description 	"\"HELLO, HEllo, Hello, hello\""
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name			"Reverse"
+					Description 	"Make the sound go backward"
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
+					Name			"Audio Texturalisation"
+					Description 	"View the audio wavemaps and edit them to your needs."
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					SoftwareCategories [Professional Based;]
+					}
+					{
+					Name		"Audio Splitter"
+					Description "Split camera audio from video"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					SoftwareCategories [Professional Based;]
+					}
+					{
+					Name		"Microphone Sniping"
+					Description "Secretly record users and fix bugs."
+					DevTime		3
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_OnRelease "Product.PutVar(\"Mic\", true);"
+					Script_EndOfDay "/Scripts/Video Editor - Script.txt"
+					}
+				]
+			}
+			{
+			Name			"Effects"
+			Spec			2D
+			Dependencies 	"2D Editor"
+			Optional	 	True
+			Description	 	"Fade in.... and out..."
+			DevTime		 	4
+			CodeArt		 	1
+			Submarkets	 	[ 7; 3; 1; ]
+			Features 
+				[
+					{
+					Name			"Import Custom Effects"
+					Description 	"Import custom effects from a 2D Editor of choice."
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 3; 1; 1 ]
+					SoftwareCategories [Professional Based;]
+					}
+					{
+					Name			"Fader"
+					Description 	"Fade in and out."
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 3; 0; 0;]
+					}
+					{
+					Name			"Slide"
+					Description 	"Slide the video in."
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 3; 1; 1 ]
+					}
+					{
+					Name			"Time Management"
+					Description 	"Edit how long [insert effect here] should take to execute."
+					DevTime			3
+					Level			1
+					CodeArt			1
+					Submarkets		[ 2; 1; 1 ]
+					SoftwareCategories [Professional Based;]
+					}
+					{
+					Name			"Crossfade"
+					Description 	"Crossfade the video."
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 3; 1; 1 ]
+					}
+					{
+					Name			"Effects library"
+					Description 	"Download effects from a built in library"
+					Server      	0.025
+					DevTime			3
+					Level			2
+					CodeArt			0.6
+					Submarkets		[ 3; 1; 1 ]
+					}
+					{
+					Name			"Custom Effects"
+					Description 	"Allow users to make custom effects."
+					DevTime			3
+					Level			2
+					CodeArt			1
+					Submarkets		[ 3; 1; 1 ]
+					SoftwareCategories [Professional Based;]
+					}
+				]
+			}
+		]
+	}

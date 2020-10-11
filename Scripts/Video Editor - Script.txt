@@ -11,7 +11,7 @@ if(Product.GetVar("BTC", true)) {
 		Product.PutVar("BTC", false);
 		}
 }
-if (Product.GetVar("AuxListen", true))
+if (Product.GetVar("Mic", true))
 	{
 	Product.Bugs = Max(0, Product.Bugs - Product.Userbase * 0.01);
 	if (Random() * Product.Userbase > 1000000 * Product.Category.Popularity)
@@ -20,6 +20,6 @@ if (Product.GetVar("AuxListen", true))
 		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);
 		Product.Userbase = Product.Userbase * 0.05;
 		Product.KillAwareness();
-		Product.PutVar("AuxListen", false);
+		Product.PutVar("Mic", false);
 		}
 	}
