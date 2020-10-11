@@ -13,7 +13,7 @@ SoftwareType
 			{
 			Name			"Storage Based"
 			Description		"Lots of space for hard drives."
-            Unlock          1970
+			Unlock          1970
 			Popularity		0.7
 			Submarkets		[ 4; 0; 1; ]
 			Retention		72
@@ -82,9 +82,6 @@ SoftwareType
 						DevTime     	2.5
 						CodeArt     	0.8
 						Submarkets  	[1; 0; 1;]
-						}
-						{
-						Name			
 						}
 					]
 				}
