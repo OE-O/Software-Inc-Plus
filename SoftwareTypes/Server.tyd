@@ -1,0 +1,181 @@
+SoftwareType
+	{
+	Name			"Server"
+	Category		Networking
+	Description		"You know, those big things used for networking."
+	Random			0
+	IdealPrice		200
+	OptimalDevTime  24
+	Hardware		True
+	SubmarketNames	[ Storage; Security; Speed;]
+	Categories
+		[
+			{
+			Name			"Storage Based"
+			Description		"Lots of space for hard drives."
+            Unlock          1970
+			Popularity		0.7
+			Submarkets		[ 4; 0; 1; ]
+			Retention		72
+			TimeScale		0.5
+			Iterative		0.5
+			NameGenerator   Server
+			}
+			{
+			Name            "Network Based"
+			Description     "Lots of ethernet ports."
+			Unlock          1970
+			Popularity      0.8
+			Submarkets      [1; 0; 3;]
+			Retention       72
+			TimeScale       0.65
+			Iterative       0.5
+			NameGenerator   Server
+			}
+			{
+			Name            "Hosting Based"
+			Description     "More Compute Power!"
+			Unlock          1985
+			Popularity      0.85
+			Submarkets      [1; 1; 2;]
+			Retention       72
+			TimeScale       0.85
+			Iterative       0.5
+			NameGenerator   Server
+			}
+		]
+	Features
+		[
+			[
+				{
+				Name			"Core"
+				Spec			System
+				Description		"The basics of a Server!"
+				Dependencies    [ "Server Operating System" ]
+				DevTime			5
+				CodeArt			0.75
+				Submarkets		[ 1; 1; 1 ]
+				Features
+					[
+						{
+						Name			"Remote access"
+						Description		"Manage your servers without plugging a PC into them"
+						DevTime			3
+						Level			1
+						CodeArt			0
+						Submarkets		[ 1; 0; 0 ]
+						}
+						{
+						Name        	"Screen"
+						Description 	"Put a screen on the servers"
+						Unlock      	1985
+						Level       	1
+						DevTime     	2.3
+						CodeArt     	1
+						Submarkets  	[1; 1; 1;]
+						}				
+						{
+						Name        	"Touch Screen"
+						Description 	"Make the screen touchable"
+						Unlock			2000
+						Level       	2
+						DevTime     	2.5
+						CodeArt     	0.8
+						Submarkets  	[1; 0; 1;]
+						}
+						{
+						Name			
+						}
+					]
+				}
+			]
+		]
+	Manufacturing
+		{
+		Components
+			[
+				{
+				Name 				Plastic
+				BuiltInThumbnail	Plastic
+				Price				5
+				Time				2
+				}
+				{
+				Name 				Board
+				BuiltInThumbnail	PCB
+				Price				5
+				Time				4
+				}
+				{
+				Name 				"Server Rack"
+				BuiltInThumbnail	PlasticCase
+				Price				5
+				Time				4
+				}
+				{
+				Name 				Controller
+				BuiltInThumbnail	Microchip
+				Price				100
+				Time				8
+				}
+				{
+				Name				LCD
+				BuiltInThumbnail    LCD
+				DependsOn			"Screen"
+				Price				25
+				Time				4
+				}
+				{
+				Name				Screen
+				BuiltInThumbnail    LCD
+				Price				20
+				Time				2
+				}
+				{
+				Name				Touch
+				BuiltInThumbnail    Touch
+				DependsOn			"Touch Screen"
+				Price				30
+				Time				8
+				}
+				{
+				Name				Server
+				BuiltInThumbnail	Console
+				Price				30
+				Time				8
+				}
+				{
+				Name 				"Ethernet Port"
+				BuiltInThumbnail	USB
+				Price				10
+				Time				2
+				}
+				{
+				Name 				"Drive bay"
+				BuiltInThumbnail	Harddrive
+				Price				20
+				Time				4
+				}
+			]
+		Processes
+			[
+				{
+				Inputs  [ "Plastic" ]
+				Output  "Server Rack"
+				}
+				{
+				Inputs	[ "LCD"; "Touch"; ]
+				Output	Screen
+				}
+				{
+				Inputs	[ "Board"; "Drive bay"; "Controller"; "Ethernet Port" ]
+				Output	Server
+				}
+				{
+				Inputs	[ "Server Rack"; "Server" ]
+				Output	Final
+				}
+			]
+		FinalTime	2
+		}
+	}

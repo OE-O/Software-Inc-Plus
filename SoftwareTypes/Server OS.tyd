@@ -134,7 +134,7 @@ SoftwareType
 					CodeArt     	0
 					Submarkets  	0
 					Script_OnRelease "Product.PutVar(\"CUD\", true);"
-					Script_EndOfDay "/Scripts/serverOperatingSystem_script.txt"
+					Script_EndOfDay "/Scripts/Server OS - Script.txt"
 					}
 					{
 					Name        	"Disable Server Hardware Limits"

@@ -7,7 +7,7 @@ SoftwareType
     IdealPrice      8.99
     Unlock          1995
     OptimalDevTime  6
-    OSSupport       [ Computer; "Storage Based";]
+    OSSupport       [ Computer;]
     OneClient       False
     InHouse         False
     SubmarketNames  [ Speed; Compatability; Usability;]
