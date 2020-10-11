@@ -1,0 +1,13 @@
+-start(middle)
+Server
+Data
+Networking
+Backup
+-middle(stop)
+3000
+2000
+1000
+9999
+30,000
+20,000
+420,069

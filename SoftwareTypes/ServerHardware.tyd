@@ -46,16 +46,15 @@ SoftwareType
 		]
 	Features
 		[
-			[
 				{
-				Name			"Core"
-				Spec			System
-				Description		"The basics of a Server!"
-				Dependencies    [ "Server Operating System" ]
-				DevTime			5
-				CodeArt			0.75
-				Submarkets		[ 1; 1; 1 ]
-				Features
+				    Name			"Server Core"
+				    Spec			System
+				    Description		"The basics of a Server!"
+				    Dependencies    "Server Operating System"
+				    DevTime			5
+				    CodeArt			0.75
+				    Submarkets		[ 1; 1; 1 ]
+				    Features
 					[
 						{
 						Name			"Remote access"
@@ -66,7 +65,7 @@ SoftwareType
 						Submarkets		[ 1; 0; 0 ]
 						}
 						{
-						Name        	"Screen"
+						Name        	"Screen Holder"
 						Description 	"Put a screen on the servers"
 						Unlock      	1985
 						Level       	1
@@ -85,20 +84,19 @@ SoftwareType
 						}
 					]
 				}
-			]
 		]
 	Manufacturing
 		{
 		Components
 			[
 				{
-				Name 				Plastic
+				Name 				"Plastic"
 				BuiltInThumbnail	Plastic
 				Price				5
 				Time				2
 				}
 				{
-				Name 				Board
+				Name 				"Board"
 				BuiltInThumbnail	PCB
 				Price				5
 				Time				4
@@ -110,33 +108,33 @@ SoftwareType
 				Time				4
 				}
 				{
-				Name 				Controller
+				Name 				"Controller"
 				BuiltInThumbnail	Microchip
 				Price				100
 				Time				8
 				}
 				{
-				Name				LCD
+				Name				"LCD"
 				BuiltInThumbnail    LCD
-				DependsOn			"Screen"
+				DependsOn			"Screen Holder"
 				Price				25
 				Time				4
 				}
 				{
-				Name				Screen
+				Name				"Screen"
 				BuiltInThumbnail    LCD
 				Price				20
 				Time				2
 				}
 				{
-				Name				Touch
+				Name				"Touch"
 				BuiltInThumbnail    Touch
 				DependsOn			"Touch Screen"
 				Price				30
 				Time				8
 				}
 				{
-				Name				Server
+				Name				"Server"
 				BuiltInThumbnail	Console
 				Price				30
 				Time				8
