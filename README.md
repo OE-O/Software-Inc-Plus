@@ -39,5 +39,3 @@ Please make sure to triple check for bugs when ready to make a pull request.
 ## License
 
 See [LICENSE](https://github.com/OE-O/software-inc-plus/blob/master/LICENSE)
-
- [![forthebadge](https://forthebadge.com/images/badges/mom-made-pizza-rolls.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
