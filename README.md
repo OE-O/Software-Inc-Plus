@@ -1,7 +1,11 @@
 [![Software Inc+](https://i.imgur.com/Tkib09K.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2121637271)
 ===================
 
+<div align="center">
+
 [![GitHub issues](https://img.shields.io/github/issues/OE-O/software-inc-plus?style=for-the-badge)](https://github.com/OE-O/software-inc-plus/issues) [![GitHub forks](https://img.shields.io/github/forks/OE-O/software-inc-plus?style=for-the-badge)](https://github.com/OE-O/software-inc-plus/network) [![GitHub stars](https://img.shields.io/github/stars/OE-O/software-inc-plus?style=for-the-badge)](https://github.com/OE-O/software-inc-plus/stargazers) [![Join The Discord](https://img.shields.io/badge/Join%20The-Discord-blue?style=for-the-badge)](https://oe-o.dev/discord)
+
+</div>
 
 Software Inc+ is a large scale add-on mod for Software Inc.
 
@@ -19,14 +23,11 @@ Contributors will be listed on the steam page, and at the bottom of this readme,
 #### Steam
 
 Subscribe on the steam workshop here:
-
 https://steamcommunity.com/sharedfiles/filedetails/?id=2121637271
 
 #### DRM-Free
 
-If you are using the DRM free version of software inc from [swinc.net](https://swinc.net), use a steam workshop downloader of choice and place in the mods folder.
-
-We recommend [steamworkshopdownloader.io](https://fallback.steamworkshopdownloader.io/) to download this.
+If you are using the DRM free version of software inc from [swinc.net](https://swinc.net), head over to the [releases](https://github.com/OE-O/software-inc-plus/releases/latest) tab and download the latest release.
 
 ## Contributing
 
