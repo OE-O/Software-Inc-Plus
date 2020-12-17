@@ -1,3 +1,0 @@
-if (!Ended && WorkItem is SoftwareAlpha) {
-    WorkItem.MaxBugs = WorkItem.MaxBugs * 1.5;
-}

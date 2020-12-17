@@ -50,7 +50,6 @@ SoftwareType
 				    Name			"Server Core"
 				    Spec			System
 				    Description		"The basics of a Server!"
-				    Dependencies    "Server Operating System"
 				    DevTime			5
 				    CodeArt			0.75
 				    Submarkets		[ 1; 1; 1 ]

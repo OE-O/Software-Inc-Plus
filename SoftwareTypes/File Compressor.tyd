@@ -5,7 +5,7 @@ SoftwareType
     Description     "Compress that file until its under a kilobyte!"
     Random          0.7
     IdealPrice      16
-    Unlock          1990
+    Unlock          1985
     OptimalDevTime  6
     OSSupport       Computer
     OneClient       False

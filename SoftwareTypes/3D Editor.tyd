@@ -2,7 +2,7 @@ SoftwareType
 {
 	Name			"3D Editor"
 	Category		Graphics
-	Description		"Points in space, basically. Happy "
+	Description		"Points in space, basically."
 	Random			0.1
 	Popularity		0.6
 	Retention		24

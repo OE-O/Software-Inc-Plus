@@ -7,10 +7,6 @@ CompanyType
 	Types
 		[
 			{
-			Software		"Server Operating System"
-			Chance			0.5
-			}
-			{
 			Software		"Operating System"
 			Chance			0.5
 			}

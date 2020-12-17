@@ -7,11 +7,6 @@ CompanyType
 	Types
 		[
 			{
-			Software		"Server Operating System"
-			Chance			1
-			Force			True
-			}
-			{
 			Software		"Operating System"
 			Chance			1
 			Force			True

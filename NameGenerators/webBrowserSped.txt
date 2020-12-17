@@ -1,17 +1,14 @@
--start(p1)
+-start(middle)
 Ultimate
 Cool
-Amazing
+Surf
 Fast
-Professional
-Interesting
--p1(p2, end)
+Metal
+Fire
+-middle(end, stop)
 Browser
-Web Browser
-Speed Browser
-World Wide Web Viewer
-Viewer
--p2()
+Speed
+Wolf
+-end(stop)
 Pro
-Maxima
-Ultima
+Dev
