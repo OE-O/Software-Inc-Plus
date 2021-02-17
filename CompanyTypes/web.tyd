@@ -1,0 +1,22 @@
+CompanyType
+	{
+	Specialization		"Web"
+	PerYear				0.2
+	Min					2
+	Max					8
+	Types
+		[
+			{
+			Software		"VPN"
+			Chance			1
+			}
+			{
+			Software		"Web Browser"
+			Chance			0.5
+			}
+			{
+			Software 		"Streaming Service"
+			Chance 			1
+			}
+		]
+	}

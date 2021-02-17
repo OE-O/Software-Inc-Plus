@@ -17,7 +17,7 @@ SoftwareType
 			Name			"Security Based"
 			Description		"\"No viruses here...\""
 			Popularity		1
-			Submarkets		[ 3; 1; 0; ]
+			Submarkets		[ 2; 1; 1 ]
 			Retention		36
 			TimeScale		1
 			Iterative		0.89
@@ -27,7 +27,7 @@ SoftwareType
 			Name            "Speed Based"
 			Description     "Gotta go fast!"
 			Popularity      1
-			Submarkets      [ 1; 3; 0; ]
+			Submarkets      [ 1; 2; 1 ]
 			Retention       36
 			TimeScale       1
 			Iterative       0.46
@@ -40,28 +40,28 @@ SoftwareType
 			Name			"Viewport"
 			Spec			2D
 			Description		"I have the power of the interwebs in my hands, *maniacal laugh*"
-			DevTime			3
+			DevTime			2
 			CodeArt			1
-			Submarkets		[ 0; 1; 0; ]
+			Submarkets		[ 1; 1; 1 ]
 			Features
 				[
 					{
 					Name        		"View Pictures"
 					Description 		"C'mon! Its Gurmi!"
 					Level       		1
-					DevTime     		3
+					DevTime     		1
 					Unlock 				1989
 					CodeArt     		0.4
-					Submarkets  		[ 1; 1; 2; ]
+					Submarkets  		[ 1; 0; 0 ]
 					}               	
 					{	
 					Name				"View Videos"
 					Description 		"C'mon! Its TubeYou!"
-					Level       		1
+					Level       		2
 					DevTime     		3
 					Unlock 				1990
 					CodeArt     		0.4
-					Submarkets  		[ 1; 2; 2; ]
+					Submarkets  		[ 1; 0; 0 ]
 					}	
 					{	
 					Name        		"SCSS Support"
@@ -70,33 +70,33 @@ SoftwareType
 					DevTime     		3
 					Unlock 				2006
 					CodeArt     		0.6
-					Submarkets  		[ 0; 1; 3; ]
+					Submarkets  		[ 0; 1; 0 ]
 					}	
 					{	
 					Name        		"Raw output"
 					Description 		"I speak like a r o b o t and read like a r o b o t"
 					Level       		1
-					DevTime     		3
+					DevTime     		1
 					CodeArt     		0.8
-					Submarkets  		[ 1; 1; 2; ]
+					Submarkets  		[ 0; 1; 0 ]
 					}	
 					{	
 					Name        		"HTML Support"
 					Description 		"The basics?"
 					Level       		1
 					Unlock 				1989
-					DevTime     		3
+					DevTime     		1
 					CodeArt     		0.8
-					Submarkets  		[ 1; 1; 2; ]
+					Submarkets  		[ 0; 0; 1 ]
 					}	
 					{	
 					Name        		"Javascript Support"
-					Description 		"C'mon! Its false = true time!"
+					Description 		"C'mon! Its false === true time!"
 					Unlock 				1995
-					Level       		1
+					Level       		2
 					DevTime     		3
 					CodeArt     		0.8
-					Submarkets  		[ 2; 2; 1; ]
+					Submarkets  		[ 0; 0; 1 ]
 					}
 				]           
 			}
@@ -104,9 +104,9 @@ SoftwareType
 			Name			"Network"
 			Spec			Network
 			Description		"Dots in the cloud, in the air, all around you... (quite literally)"
-			DevTime			3
+			DevTime			4
 			CodeArt			1
-			Submarkets		[ 1; 1; 0; ]
+			Submarkets		[ 1; 1; 1 ]
 			Features
 				[
 					{
@@ -114,28 +114,28 @@ SoftwareType
 					Description 		"Fly around the world, all from your bedroom."
 					Level       		2
 					Unlock      		2000
-					DevTime     		3
+					DevTime     		2
 					CodeArt     		1
-					SoftwareCategories 	[ Security Based; ]
-					Submarkets  		[ 3; 1; 0; ]
+					SoftwareCategories 	[ Security Based ]
+					Submarkets  		[ 1; 0; 0 ]
 					}
 					{
 					Name        		"Faster Queries"
 					Description 		"Speed is key."
-					Level       		1
-					DevTime     		3
+					Level       		2
+					DevTime     		2
 					CodeArt     		1
-					SoftwareCategories 	[ Speed Based; ]
-					Submarkets  		[ 1; 3; 0; ]
+					SoftwareCategories 	[ Speed Based ]
+					Submarkets  		[ 0; 1; 0 ]
 					}
 					{
 					Name        		"Built-in Adblocker"
 					Description 		"Halt, I do not want sexy chicks near me!"
-					Level       		1
-					DevTime     		3
+					Level       		2
+					DevTime     		2
 					CodeArt     		0.8
-					SoftwareCategories 	[ Security Based; ]
-					Submarkets  		[ 3; 1; 0; ]
+					SoftwareCategories 	[ Security Based ]
+					Submarkets  		[ 0; 0; 1 ]
 					}
 				]
 			}
@@ -143,12 +143,11 @@ SoftwareType
 			Name			"3D Rendering"
 			Spec			3D
 			Description		"Dots away!"
-			DevTime			3
-			CodeArt			1
+			DevTime			4
+			CodeArt			0.5
 			Optional		True
 			Unlock			1995
-			Submarkets		[ 0; 1; 1; ]
-			Features 		[]
+			Submarkets		[ 1; 1; 1; ]
 			}
 		]
 	}

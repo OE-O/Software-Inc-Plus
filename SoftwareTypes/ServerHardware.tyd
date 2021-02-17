@@ -5,39 +5,39 @@ SoftwareType
 	Description		"You know, those big things used for networking."
 	Random			0
 	IdealPrice		200
-	OptimalDevTime  24
+	OptimalDevTime  10
 	Hardware		True
-	SubmarketNames	[ Storage; Security; Speed;]
+	SubmarketNames	[ Storage; Security; Speed ]
 	Categories
 		[
 			{
-			Name			"Storage Based"
+			Name			"Storage"
 			Description		"Lots of space for hard drives."
 			Unlock          1970
 			Popularity		0.7
-			Submarkets		[ 4; 0; 1; ]
+			Submarkets		[ 4; 0; 1 ]
 			Retention		72
 			TimeScale		0.5
 			Iterative		0.5
 			NameGenerator   Server
 			}
 			{
-			Name            "Network Based"
+			Name            "Network"
 			Description     "Lots of ethernet ports."
 			Unlock          1970
 			Popularity      0.8
-			Submarkets      [1; 0; 3;]
+			Submarkets      [ 1; 0; 3 ]
 			Retention       72
 			TimeScale       0.65
 			Iterative       0.5
 			NameGenerator   Server
 			}
 			{
-			Name            "Hosting Based"
+			Name            "Hosting"
 			Description     "More Compute Power!"
 			Unlock          1985
 			Popularity      0.85
-			Submarkets      [1; 1; 2;]
+			Submarkets      [ 1; 1; 2 ]
 			Retention       72
 			TimeScale       0.85
 			Iterative       0.5
@@ -59,27 +59,27 @@ SoftwareType
 						Name			"Remote access"
 						Description		"Manage your servers without plugging a PC into them"
 						DevTime			3
-						Level			1
+						Level			2
 						CodeArt			0
-						Submarkets		[ 1; 0; 0 ]
+						Submarkets		[ 1; 1; 0 ]
 						}
 						{
 						Name        	"Screen Holder"
 						Description 	"Put a screen on the servers"
 						Unlock      	1985
-						Level       	1
-						DevTime     	2.3
+						Level       	2
+						DevTime     	3
 						CodeArt     	1
-						Submarkets  	[1; 1; 1;]
+						Submarkets  	[ 0; 1; 1 ]
 						}				
 						{
 						Name        	"Touch Screen"
 						Description 	"Make the screen touchable"
 						Unlock			2000
 						Level       	2
-						DevTime     	2.5
+						DevTime     	3
 						CodeArt     	0.8
-						Submarkets  	[1; 0; 1;]
+						Submarkets  	[ 1; 0; 1 ]
 						}
 					]
 				}

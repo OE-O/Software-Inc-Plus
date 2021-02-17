@@ -1,16 +1,11 @@
 CompanyType
 	{
-	Specialization		"Server Management"
+	Specialization		"Utility Company"
 	PerYear				0.2
 	Min					4
-	Max					9
+	Max					10
 	Types
 		[
-			{
-			Software		"Operating System"
-			Chance			1
-			Force			True
-			}
 			{
 			Software		"Antivirus"
 			Chance			1

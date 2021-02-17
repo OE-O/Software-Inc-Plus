@@ -2,8 +2,8 @@ CompanyType
 	{
 	Specialization		"Video and Entertainment"
 	PerYear				0.2
-	Min					4
-	Max					10
+	Min					3
+	Max					8
 	Types
 		[
 			{
@@ -20,10 +20,6 @@ CompanyType
 			}
 			{
 			Software 		"Audio Tool"
-			Chance 			1
-			}
-			{
-			Software 		"File Compression Tool"
 			Chance 			1
 			}
 			{

@@ -6,7 +6,7 @@ SoftwareType
     Random          0.8
     IdealPrice      8.99
     Unlock          2000
-    OptimalDevTime  6
+    OptimalDevTime  8
     OSSupport       [Computer; Console; Phone;]
     OneClient       False
     InHouse         False
@@ -17,7 +17,7 @@ SoftwareType
             Name			"Location Based"
             Description		"\"Hey mom! I just traveled to the USA, Japan and North Korea in a click of a button!\""
             Popularity		1
-            Submarkets		[ 5; 5; 5; ]
+            Submarkets		[ 1; 1; 1; ]
             Retention		39
             TimeScale		1
             Iterative		0.89
@@ -30,75 +30,75 @@ SoftwareType
             Name			"Network"
             Spec			Network
             Description		"Well, Well, Well, look who's watching a Netflix Show that isn't available in your country..."
-            DevTime			3
+            DevTime			2
             CodeArt			1
-            Submarkets		[ 0; 1; 0; ]
+            Submarkets		[ 1; 1; 1 ]
             Features
                 [
                     {
                     Name			"Stop Data Trackers"
                     Description 	"Yeah thats right Facebook!"
                     Level       	1
-                    DevTime     	3
+                    DevTime     	1
                     CodeArt     	0
-                    Submarkets  	[6; 2; 3;]
+                    Submarkets  	[ 0; 1; 0 ]
                     }
                     {
                     Name 			"Stop Government Trackers"
                     Description 	"Tin foil hats dont work anymore!"
-                    Level 			1
-                    DevTime 		3
+                    Level 			2
+                    DevTime 		1
                     CodeArt 		0
-                    Submarkets 		[1; 2; 0;]
+                    Submarkets 		[ 0; 1; 0 ]
                     }
                     {
                     Name 			"Stop Advert Trackers"
                     Description 	"Stop showing me sexy asian chicks near me!"
                     Level 			1
-                    DevTime 		3
+                    DevTime 		1
                     CodeArt 		0
-                    Submarkets 		[1; 2; 1;]
+                    Submarkets 		[ 0; 1; 0 ]
                     }
                     {
                     Name 			"Change Location"
                     Description 	"Allow users to change their locations through internet rerouting."
                     Server 			0.01
                     Level 			1
-                    DevTime 		3
+                    DevTime 		1
                     CodeArt 		0
-                    Submarkets 		[1; 3; 1;]
+                    Submarkets 		[ 1; 0; 0 ]
                     }
                     {
                     Name 			"Stop Location Trackers"
                     Description 	"\"I used my location to destroy the location...\""
                     Server 			0.01
-                    Level 			1
-                    DevTime 		3
+                    Level 			2
+                    DevTime 		1
                     CodeArt 		0
-                    Submarkets 		[1; 2; 0;]
+                    Submarkets 		[ 0; 1; 0 ]
                     }
                     {
                     Name 			"Tracker Database"
                     Description 	"Allow users to send trackers for you to analyze."
                     Server 			0.01
                     Level 			2
-                    DevTime 		5
+                    DevTime 		1
                     CodeArt 		0
-                    Submarkets 		[1; 1; 0;]
+                    Submarkets 		[ 1; 0; 0 ]
                     }
                     {
                     Name 			"Location Database"
                     Description 	"Allow users to read up on a location, how many people are using that location, etc."
                     Level 			2
-                    DevTime 		4
+                    DevTime 		1
                     CodeArt 		1
-                    Submarkets 		[1; 1; 1;]
+                    Submarkets 		[ 1; 0; 0 ]
                     }
                     {
                     Name 			"Subscription Service"
                     Description 	"Allow users to subscribe for \"Premium VPN\", which gives you a small amount of {Currency:3.44} per user that subscribes."
                     Level 			3
-                    DevTime 		6
+                    DevTime 		4
                     CodeArt 		1
                     Submarkets 		0
                     Script_OnRelease "Product.PutVar(\"Subscriptions\", true);"
@@ -110,10 +110,10 @@ SoftwareType
             Name			"UI"
             Spec 			2D
             Description 	"Tons of clicky little buttons."
-            DevTime 		3
+            DevTime 		2
             Optional 		False
             CodeArt 		1
-            Submarkets 		[0; 1; 3;]
+            Submarkets 		[0; 1; 1;]
             Features 
                 [
                     {
@@ -127,10 +127,10 @@ SoftwareType
                     {
                     Name 			"Exclusions"
                     Description 	"Allow the user to mark websites that the VPN shouldn't touch."
-                    Level 			1
+                    Level 			2
                     DevTime 		1
                     CodeArt 		1
-                    Submarkets 		[2; 0; 1;]
+                    Submarkets 		[0; 0; 1;]
                     }
                     {
                     Name 			"Dark Mode"
@@ -144,7 +144,7 @@ SoftwareType
                     Name 			"Timed Turn Off"
                     Description 	"Allow the user to turn the VPN off for a specified amount of time."
                     Level 			2
-                    DevTime 		2
+                    DevTime 		1
                     CodeArt 		1
                     Submarkets		[0; 0; 1;]
                     }
@@ -152,9 +152,9 @@ SoftwareType
                     Name 			"Automatic Battery Saver"
                     Description 	"Save battery by turning off the VPN when it has not been in use."
                     Level 			2
-                    DevTime 		2
+                    DevTime 		1
                     CodeArt 		1
-                    Submarkets 		[0; 0; 1;]
+                    Submarkets 		[ 1; 0; 0 ]
                     }
                 ]
             }

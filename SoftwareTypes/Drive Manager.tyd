@@ -4,21 +4,21 @@ SoftwareType
     Category        "Drive Management"
     Description     "Manage all your computer drives to keep them fast."
     Random          0.8
-    IdealPrice      8.99
+    IdealPrice      15
     Unlock          1995
-    OptimalDevTime  6
-    OSSupport       [ Computer;]
+    OptimalDevTime  8
+    OSSupport       [ Computer ]
     OneClient       False
     InHouse         False
-    SubmarketNames  [ Speed; Compatability; Usability;]
+    SubmarketNames  [ Speed; Compatability; Usability ]
     Categories 
         [
             {
             Name            "Generic"
             Description		"You can't really have different types of drive management software..."
             Popularity		1
-            Submarkets		[ 5; 5; 5; ]
-            Retention		39
+            Submarkets		[ 1; 1; 1 ]
+            Retention		36
             TimeScale		1
             Iterative		0.89
             NameGenerator   driveManTool
@@ -30,40 +30,48 @@ SoftwareType
             Name            "System"
             Spec		    System
             Description	    "Manage them files like you just don't care!"
-            DevTime		    3
+            DevTime		    2
             CodeArt		    1
-            Submarkets	    [ 1; 1; 1; ]
+            Submarkets	    [ 1; 1; 1 ]
             Features
                 [
                     {
                     Name            "Dynamic Storage"
                     Description     "Allow the tool to reserve storage and give storage on demand."
                     Level           1
-                    DevTime         2
+                    DevTime         1
                     CodeArt         1
-                    Submarkets      [ 1; 0; 0; ]
+                    Submarkets      [ 1; 0; 0 ]
                     }
                     {
                     Name            "Formatting"
                     Description     "Make way for that new OS"
                     Level           1
-                    DevTime         3
+                    DevTime         1
                     CodeArt         1
-                    Submarkets      [ 1; 0; 0; ]
+                    Submarkets      [ 0; 1; 0 ]
                     }
+					{
+					Name			"Drive Partitioning"
+					Description		"Put more than one OS on the same drive"
+					Level			2
+					DevTime			2
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
                     {
                     Name            "Hardware Acceleration"
                     Description     "Speed that $h*¿ up."
                     Level           2
                     DevTime         2
                     CodeArt         0.9
-                    Submarkets      [ 1; 0; 0; ]
+                    Submarkets      [ 1; 0; 0 ]
                     }
                     {
                     Name            "Dynamic Disks"
                     Description     "It might make users' drives faster at the cost of a few bugs..."
                     Level           3
-                    DevTime         1
+                    DevTime         4
                     CodeArt         1
                     Submarkets      0
                     Script_OnRelease "Product.PutVar(\"DynamicDisks\", true);"
@@ -78,32 +86,40 @@ SoftwareType
             DevTime         2
             Dependencies    "2D Editor"
             CodeArt         0.4
-            Submarkets      [ 0; 0; 1]
+            Submarkets      [ 1; 0; 2 ]
             Features 
                 [
                     {
                     Name            "Drag'n'Drop"
                     Description     "So easy even a baby could do it."
-                    DevTime		    4
+                    DevTime		    1
                     Level		    1
-                    CodeArt		    1
-                    Submarkets	    [ 1; 1; 2; ]
+                    CodeArt		    0.2
+                    Submarkets	    [ 0; 0; 1 ]
                     }
+					{
+					Name			"Live Metrics"
+					Description		"See the drive temperatures, rpms, and read/write speeds all in one place"
+					DevTime			1
+					Level			1
+					CodeArt			0.4
+					Submarkets		[ 0; 1; 0 ]
+					}
                     {
                     Name            "Multitasking"
                     Description     "Manage more than one drive at the same time!!"
-                    DevTime		    3
-                    Level		    1
+                    DevTime		    2
+                    Level		    2
                     CodeArt		    1
-                    Submarkets	    [ 2; 1; 3; ]
+                    Submarkets	    [ 1; 0; 1 ]
                     }
                     {
                     Name            "Progress Bar"
                     Description     "Now this is \"Fancy\""
-                    DevTime		    4
+                    DevTime		    2
                     Level		    2
-                    CodeArt		    0.85
-                    Submarkets	    [ 1; 0; 1; ]
+                    CodeArt		    0.6
+                    Submarkets	    [ 0; 0; 1 ]
                     }
                 ]
             }

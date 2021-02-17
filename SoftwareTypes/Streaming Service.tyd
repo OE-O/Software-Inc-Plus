@@ -6,22 +6,22 @@ SoftwareType
 	Unlock 			2001
 	Random 			0.6
 	IdealPrice 		67.99
-	OptimalDevTime 	55
+	OptimalDevTime 	8
 	Popularity 		0.8
-	Retention 		95
+	Retention 		96
 	Iterative 		0.1
-	OSSupport 		[Computer; Console; Phone;]
+	OSSupport 		[ Computer; Console; Phone ]
 	InHouse 		False
 	NameGenerator 	streamingService
-	SubmarketNames 	[Quality; Speed; Selection]
+	SubmarketNames 	[ Quality; Speed; Selection ]
 	Categories
 		[
 			{
-			Name 			"Generic"
-			Description 	"There is really only one type of service..."
+			Name 			"Video"
+			Description 	"Stream TV and Video"
 			Unlock 			2001
 			Popularity 		0.7
-			Submarkets 		[1; 1; 1;]
+			Submarkets 		[ 1; 1; 1 ]
 			TimeScale 		1
 			Retention 		95
 			Iterative 		0.1
@@ -36,7 +36,7 @@ SoftwareType
 			Description 	"Films and TV shows etc."
 			Dependencies 	"Video Editor"
   			DevTime 		4
-			Submarkets 		[1; 3; 5;]
+			Submarkets 		[ 1; 1; 1 ]
 			CodeArt 		0.4
 			Server 			0.005
 			Features
@@ -44,58 +44,58 @@ SoftwareType
 					{
 					Name 			"Rentable Films"
 					Description 	"Allow users to rent Films."
-					DevTime 		4
+					DevTime 		2
 					Level 			1
 					CodeArt 		1
-					Submarkets 		[ 3; 2; 0;]
+					Submarkets 		[ 0; 0; 1 ]
 					}
 					{
 					Name 			"Rentable TV Shows"
 					Description 	"Allow users to rent TV Shows."
-					DevTime 		4
+					DevTime 		2
 					Level 			1
 					CodeArt 		1
-					Submarkets 		[ 3; 2; 0;]
+					Submarkets 		[ 1; 1; 1 ]
 					}
 					{
 					Name 			"Purchase TV Shows"
 					Description 	"Allow users to buy TV Shows."
-					DevTime 		4
+					DevTime 		2
 					Level 			1
 					CodeArt 		1
-					Submarkets 		[ 3; 2; 0;]
+					Submarkets 		[ 1; 0; 0 ]
 					}
 					{
 					Name 			"Purchase Films"
 					Description 	"Allow users to buy Films."
-					DevTime 		4
+					DevTime 		2
 					Level 			1
 					CodeArt 		1
-					Submarkets 		[ 3; 2; 0;]
+					Submarkets 		[ 0; 1; 0 ]
 					}
 					{
 					Name 			"Original TV Shows"
 					Description 	"\"Come to us because we have a show you cant get anywhere else!\""
-					DevTime 		8
+					DevTime 		4
 					Level			2
-					CodeArt 		1
-					Submarkets 		[ 3; 1; 2 ]
+					CodeArt 		0
+					Submarkets 		[ 0; 1; 0 ]
 					}
 					{
 					Name 			"Original Films"
 					Description 	"\"Come to us because we have a film you cant get anywhere else!\""
-					DevTime 		8
+					DevTime 		4
 					Level			2
-					CodeArt 		1
-					Submarkets 		[ 3; 1; 2 ]
+					CodeArt 		0
+					Submarkets 		[ 0; 0; 1 ]
 					}
 					{
 					Name			"Classics"
 					Description 	"Show classic TV shows and Films."
-					DevTime 		7
+					DevTime 		2
 					Level 			2
-					CodeArt 		1
-					Submarkets 		[3; 1; 2;]
+					CodeArt 		0.5
+					Submarkets 		[ 1; 0; 0 ]
 					}
 				]
 			}

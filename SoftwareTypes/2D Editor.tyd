@@ -20,7 +20,7 @@ SoftwareType
 			Name			"2D graphics"
 			Spec			2D
 			Description 	"Seems pretty essential for this software type"
-			DevTime			6
+			DevTime			4
 			CodeArt			0.8
 			Submarkets		[ 1; 1; 1 ]
 			Features
@@ -28,18 +28,18 @@ SoftwareType
 					{
 					Name			"Vector Graphics"
 					Description 	"Create lines from pixels."
-					DevTime			6
+					DevTime			2
 					Level			2
 					CodeArt			1
-					Submarkets		[ 1; 4; 0 ]
+					Submarkets		[ 0; 1; 0 ]
 					}
 					{
 					Name			"Procedural shapes"
 					Description 	"Who wants to draw a rectangle manually?"
-					DevTime			4
+					DevTime			2
 					Level			1
 					CodeArt			1
-					Submarkets		[ 1; 3; 0 ]
+					Submarkets		[ 0; 1; 0 ]
 					}
 					{
 					Name			"Layers"
@@ -47,15 +47,15 @@ SoftwareType
 					DevTime			4
 					Level			1
 					CodeArt			1
-					Submarkets		[ 1; 1; 0 ]
+					Submarkets		[ 1; 1; 2 ]
 					}
 					{
 					Name			"Dynamic brushes"
 					Description 	"Amazing! So smooth and bluurrreeedd."
-					DevTime			3
+					DevTime			4
 					Level			1
 					CodeArt			1
-					Submarkets		[ 3; 0; 1 ]
+					Submarkets		[ 1; 0; 1 ]
 					}
 					{
 					Name			"Levels and curves"
@@ -63,31 +63,31 @@ SoftwareType
 					DevTime			3
 					Level			1
 					CodeArt			1
-					Submarkets		[ 0; 0; 1 ]
+					Submarkets		[ 0; 1; 1 ]
 					}
 					{
 					Name			"Image effects"
 					Description 	"Needs more instagram filters."
-					DevTime			6
+					DevTime			4
 					Level			1
 					CodeArt			1
-					Submarkets		[ 0; 0; 1 ]
+					Submarkets		[ 0; 1; 1 ]
 					}
 					{
 					Name			"Text rendering"
 					Description 	"Type it up like you just don't care!"
-					DevTime			4
+					DevTime			1
 					Level			1
 					CodeArt			1
-					Submarkets		[ 0; 1; 0 ]
+					Submarkets		[ 1; 1; 1 ]
 					}
 					{
 					Name			"Brush presets"
 					Description 	"Thick and thin, wide and short!"
-					DevTime			3
-					Level			1
+					DevTime			4
+					Level			2
 					CodeArt			0
-					Submarkets		[ 1; 0; 0 ]
+					Submarkets		[ 1; 1; 0 ]
 					}
 					{
 					Name			"Brush stroke smoothing"
@@ -95,28 +95,28 @@ SoftwareType
 					DevTime			2
 					Level			1
 					CodeArt			0
-					Submarkets		[ 1; 0; 0 ]
+					Submarkets		[ 1; 1; 1 ]
 					}
 					{
 					Name			"Clip art"
 					Description 	"Cute cartoony apple you got there!"
 					DevTime			4
-					Level			1
+					Level			2
 					CodeArt			0
 					Submarkets		[ 0; 1; 0 ]
 					}
 					{
 					Name			"Liquify"
 					Description 	"Stretch and pull your pixels"
-					DevTime			4
+					DevTime			5
 					Level			2
 					CodeArt			1
-					Submarkets		[ 0; 0; 1 ]
+					Submarkets		[ 2; 1; 1 ]
 					}
 					{
 					Name			"Healing brush"
 					Description		"Remove zits, spots, specks, people, buildings, etc."
-					DevTime			3
+					DevTime			5
 					Level			2
 					CodeArt			1
 					Submarkets		[ 0; 0; 1 ]
@@ -124,10 +124,10 @@ SoftwareType
 					{
 					Name        	"Red Eye Filter"
 					Description 	"Remove the evil red eyes of doom!"
-					DevTime     	3
+					DevTime     	4
 					Level       	2
 					CodeArt     	1
-					Submarkets  	[0; 0; 1;]
+					Submarkets  	[ 0; 1; 3 ]
 					}
 					{
 					Name			"Beautify"
@@ -135,7 +135,7 @@ SoftwareType
 					DevTime			6
 					Level			3
 					CodeArt			1
-					Submarkets		[ 0; 0; 1 ]
+					Submarkets		0
 					Script_AfterSales "/Scripts/2D Editor - Beautify.txt"
 					}
 				]
@@ -145,7 +145,7 @@ SoftwareType
 			Spec			System
 			DevTime			2
 			CodeArt			1
-			Submarkets		[ 1; 1; 1 ]
+			Submarkets		[ 1; 1; 2 ]
 			Features
 				[
 					{
@@ -157,11 +157,19 @@ SoftwareType
 					Submarkets		[ 0; 0; 1 ]
 					}
 					{
+					Name			"Image Compression"
+					Description		"Make the file size smaller without losing any detail"
+					DevTime			2
+					Level			1
+					CodeArt			1
+					Submarkets		[ 0; 1; 0 ]
+					}
+					{
 					Name			"Drawing tablet support"
 					Description 	"Allow users to plug in a drawing tablet!"
-					DevTime			3
+					DevTime			4
 					Unlock      	1985
-					Level			1
+					Level			2
 					CodeArt			1
 					Submarkets		[ 1; 0; 0 ]
 					}
@@ -171,15 +179,56 @@ SoftwareType
 					DevTime     	5
 					Level       	2
 					CodeArt     	1
-					Submarkets  	[1; 1; 1;]
+					Submarkets  	[ 1; 1; 0 ]
 					}
 					{
 					Name        	"Open 3D Objects"
 					Description 	"Allow the users to open 3D objects and turn them into 2D images!"
-					DevTime 		7
+					DevTime 		6
 					Level 			2
 					CodeArt 		1
-					Submarkets 		[1; 2; 0;]
+					Submarkets 		[ 1; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name			Network
+			Spec			Network
+			Unlock			1990
+			DevTime			4
+			CodeArt			1
+			Optional		True
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name			"Auto Update"
+					Description		"Delete people's work to install an update at the most inconvenient time"
+					Unlock			2000
+					Server			0.0002
+					DevTime			2
+					Level			1
+					CodeArt			1
+					Submarkets		[ 1; 1; 1 ] 
+					}
+					{
+					Name			"Integrated social access"
+					Description		"Share your latest masterpiece without leaving the app"
+					Unlock			2000
+					Server			0.00005
+					DevTime			2
+					Level			2
+					CodeArt			1
+					Submarkets		[ 1; 1; 1 ] 
+					}
+					{
+					Name			"Cloud Sync"
+					Description		"Save a backup of users work on the cloud"
+					Server			0.0015
+					DevTime			4
+					Level			2
+					CodeArt			1
+					Submarkets		[ 1; 1; 1 ] 
 					}
 				]
 			}

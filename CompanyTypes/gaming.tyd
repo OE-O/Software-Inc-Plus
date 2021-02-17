@@ -2,25 +2,22 @@ CompanyType
 	{
 	Specialization		"Gaming"
 	PerYear				0.2
-	Min					4
-	Max					9
+	Min					3
+	Max					5
 	Types
 		[
-			{
-			Software		"3D Editor"
-			Chance			1
-			}
-			{
-			Software		"Operating System"
-			Chance			1
-			}
             {
             Software 		"Game"
-            Chance 			1
+            Chance 			0.5
             }
             {
             Software 		"Game Editor"
             Chance 			1
+			Force			True
             }
+			{
+			Software		"Emulator"
+			Chance			1
+			}
 		]
 	}
